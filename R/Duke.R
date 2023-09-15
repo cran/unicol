@@ -4,7 +4,7 @@
 
 # Information: ------
 
-# uni_pals: "duke_1", "duke_2" (2)
+# cur_pals: "duke_1", "duke_2" (2)
 # inst: "Duke University"
 # country: USA
 # URL: "https://duke.edu"
@@ -49,7 +49,7 @@
 #' duke_1
 #' unikn::seecol(duke_1, main = "Primary colors Duke University") # view color palette
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes
 #'
 #' @seealso
 #' \code{\link{duke_2}} for secondary colors of Duke University;
@@ -114,7 +114,7 @@ duke_1 <- unikn::newpal(col = c("#012169", "#00539B"),
 #' duke_2
 #' unikn::seecol(duke_2, main = "Secondary colors Duke University") # view color palette
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes
 #'
 #' @seealso
 #' \code{\link{duke_1}} for primary colors of Duke University;

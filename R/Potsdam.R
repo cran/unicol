@@ -4,7 +4,7 @@
 
 # Information: ----
 
-# unipals: "uni_potsdam" (1)
+# cur_pals: "uni_potsdam" (1)
 # inst: "University of Potsdam" 
 # country: Germany
 # URL: "https://www.uni-potsdam.de/"
@@ -49,7 +49,7 @@
 #' uni_potsdam
 #' unikn::seecol(uni_potsdam, main = "University of Potsdam") # view color palette.
 #'
-#' @family university color palettes
+#' @family German university color palettes
 #'
 #' @seealso
 #' \code{\link{seecol}} for viewing and comparing color palettes;

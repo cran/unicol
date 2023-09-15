@@ -1,10 +1,10 @@
-## NotreDame.R | 2023 07 20
+## NotreDame.R | 2023 08 22
 ## Colors of the University of Notre Dame, USA
 ## -------------------------------------------
 
 # Information: ----
 
-# unipals: "notredame_1", "notredame_2" (2)
+# cur_pals: "notredame_1", "notredame_2" (2)
 # inst: "University of Notre Dame" 
 # country: USA
 # URL: "https://www.nd.edu"
@@ -40,9 +40,9 @@
 #'
 #' @examples
 #' notredame_1
-#' unikn::seecol(notredame_1, main= "University of Notre Dame") #view color palette.
+#' unikn::seecol(notredame_1, main = "University of Notre Dame 1") # view color palette.
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes
 #'
 #' @seealso
 #' \code{\link{notredame_2}} for the secondary colors of Notre Dame;
@@ -59,7 +59,7 @@ notredame_1 <- unikn::newpal(col = c("#0c2340", "#ae9142"),
                              as_df = FALSE)
 
 
-# - notredame_2: Secondary colors -----
+# - notredame_2: Secondary colors of Notre Dame -----
 
 #' Secondary colors of the University of Notre Dame, USA 
 #' 
@@ -95,7 +95,7 @@ notredame_1 <- unikn::newpal(col = c("#0c2340", "#ae9142"),
 #' notredame_2
 #' unikn::seecol(notredame_2, main = "University of Notre Dame") # view color palette
 #' 
-#' @family university color palettes.
+#' @family U.S. university color palettes
 #'
 #' @seealso 
 #' \code{\link{notredame_1}} for the primary colors of Notre Dame;

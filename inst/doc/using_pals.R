@@ -3,32 +3,32 @@ org_opt <- options()  # store original user options
 
 options(max.print = "75")
 
-knitr::opts_chunk$set(echo = TRUE,
-                      cache = FALSE,
+knitr::opts_chunk$set(collapse = FALSE, 
+                      comment = "#>", 
                       prompt = FALSE,
                       tidy = FALSE,
-                      collapse = TRUE, 
-                      comment = "#>",
+                      echo = TRUE, 
                       message = FALSE,
                       warning = FALSE,
                       # Default figure options:
-                      fig.width = 6, 
-                      fig.asp = .70, # .618, # golden ratio
-                      fig.align = "center",
-                      out.width = "75%"
-)
+                      dpi = 100, 
+                      fig.align = 'center',
+                      fig.height = 5.0,
+                      fig.width  = 7.5,
+                      out.width = "600px")
 
 # URLs: ------ 
 
-# unikn:
-url_unikn <- "https://www.uni-konstanz.de/"
+# unicol package: 
+url_unicol_cran   <- "https://CRAN.R-project.org/package=unicol"
+url_unicol_github <- "https://github.com/hneth/unicol"
 
+# unikn / Uni Konstanz:
+url_unikn <- "https://www.uni-konstanz.de"
+
+# unikn package: 
 url_unikn_cran   <- "https://CRAN.R-project.org/package=unikn"
 url_unikn_github <- "https://github.com/hneth/unikn"
-
-# unicol: 
-url_unicol_cran   <- "" # "https://CRAN.R-project.org/package=unicol"
-url_unicol_github <- "https://github.com/hneth/unicol" 
 
 ## ----load-unicol-pkg, message = FALSE, warning = FALSE------------------------
 # install.packages('unicol')  # install unicol from CRAN client
@@ -53,13 +53,13 @@ par(mar = c(1, 1, 2.1, 1), oma = c(0, 0, 0, 0))  # reduce margins
 
 set.seed(6 * pi)  # reproducible randomness
 
-## ----demo-scatterplot-a, eval = TRUE, fig.width = 6, fig.asp = .90, fig.align = 'center', collapse = TRUE----
+## ----demo-scatterplot-a, eval = TRUE, fig.width = 6, fig.asp = .90, out.width = "400px"----
 plot(x = runif(99), y = runif(99), type = "p", 
      pch = 16, cex = 4,
      col = caltech_1,
      main = "99 dots (in Caltech colors)", axes = FALSE, xlab = NA, ylab = NA)
 
-## ----demo-scatterplot-b, eval = TRUE, fig.width = 6, fig.asp = .90, fig.align = 'center', collapse = TRUE----
+## ----demo-scatterplot-b, eval = TRUE, fig.width = 6, fig.asp = .90, out.width = "400px"----
 my_col <- unikn::usecol(caltech_1, alpha = .60)  # with transparency
 
 plot(x = runif(99), y = runif(99), type = "p", 
@@ -70,7 +70,7 @@ plot(x = runif(99), y = runif(99), type = "p",
 ## ----plot-par-reset, echo = FALSE---------------------------------------------
 par(opar)  # re-store original user settings
 
-## ----use-pal-ggplot2, eval = TRUE, fig.width = 6, fig.asp = .65, fig.align = 'center', collapse = TRUE----
+## ----use-pal-ggplot2, eval = TRUE, fig.width = 6, fig.asp = .65, out.width = "550px"----
 # 0. Create some data to plot: ---- 
 
 # Example based on https://www.r-graph-gallery.com/137-spring-shapes-data-art/

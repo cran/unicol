@@ -22,11 +22,11 @@ A named vector of colors (HEX/HTML codes of type character).
 of the \href{https://www.uci.edu}{University of California Health, Irvine}, USA.
 }
 \details{
-The 5 teritary colors are
+The 5 tertiary colors are
 \code{"dark_orange"} (defined as HEX #b71234),
 \code{"bright_purple"} (defined as HEX #7c109a),
 \code{"turquoise"} (defined as HEX #00b0ca),
-\code{"lime_green"} (defined as HEX #7ab800) and 
+\code{"lime_green"} (defined as HEX #7ab800), and 
 \code{"yellow"} (defined as HEX #fecb00).
 
 \code{uci_3} uses the HEX color definitions.
@@ -45,8 +45,102 @@ unikn::seecol(uci_3, main = "U of California, Irvine, 3") # view color palette
 \code{\link{simcol}} for finding similar colors;
 \code{\link{newpal}} for defining new color palettes;
 \code{\link{grepal}} for finding named colors.
+
+Other U.S. university color palettes: 
+\code{\link{CMU_1_core}},
+\code{\link{CMU_2_tartan}},
+\code{\link{CMU_3_campus}},
+\code{\link{UCLA_1}},
+\code{\link{UCLA_2}},
+\code{\link{UCLA_3}},
+\code{\link{UCLA_4}},
+\code{\link{UCSD_1}},
+\code{\link{UCSD_2}},
+\code{\link{UCSD_3}},
+\code{\link{asu_1}},
+\code{\link{asu_2}},
+\code{\link{asu_3}},
+\code{\link{berkeley_1}},
+\code{\link{berkeley_2}},
+\code{\link{brown_1}},
+\code{\link{brown_2}},
+\code{\link{bu}},
+\code{\link{caltech_1}},
+\code{\link{caltech_2}},
+\code{\link{caltech_3}},
+\code{\link{columbia}},
+\code{\link{cornell_1}},
+\code{\link{cornell_2}},
+\code{\link{cornell_3_accent}},
+\code{\link{dartmouth_1}},
+\code{\link{dartmouth_2}},
+\code{\link{dartmouth_3}},
+\code{\link{duke_1}},
+\code{\link{duke_2}},
+\code{\link{harvard_1}},
+\code{\link{harvard_2}},
+\code{\link{harvard_3}},
+\code{\link{jhu_0}},
+\code{\link{jhu_1}},
+\code{\link{jhu_2}},
+\code{\link{jhu_3_accent}},
+\code{\link{jhu_4_gray}},
+\code{\link{manchester_uni_1}},
+\code{\link{manchester_uni_accent}},
+\code{\link{michigan_1}},
+\code{\link{michigan_2}},
+\code{\link{minnesotatwin_1}},
+\code{\link{minnesotatwin_2}},
+\code{\link{mit}},
+\code{\link{monash_1}},
+\code{\link{monash_2}},
+\code{\link{msu}},
+\code{\link{northwestern_1}},
+\code{\link{northwestern_2}},
+\code{\link{notredame_1}},
+\code{\link{notredame_2}},
+\code{\link{nyu_1}},
+\code{\link{nyu_2}},
+\code{\link{nyu_accent}},
+\code{\link{nyu_neutral}},
+\code{\link{ohio_uni_1}},
+\code{\link{ohio_uni_2}},
+\code{\link{pitt_1}},
+\code{\link{pitt_2}},
+\code{\link{princeton_0}},
+\code{\link{princeton_1}},
+\code{\link{princeton_2}},
+\code{\link{rpi_1}},
+\code{\link{rpi_2}},
+\code{\link{rpi_3}},
+\code{\link{stanford_1}},
+\code{\link{stanford_2_accent}},
+\code{\link{stanford_3_web}},
+\code{\link{uchicago_1}},
+\code{\link{uchicago_2}},
+\code{\link{uci_1}},
+\code{\link{uci_2}},
+\code{\link{uci_4}},
+\code{\link{uflorida_1}},
+\code{\link{uflorida_2}},
+\code{\link{uflorida_3}},
+\code{\link{umass_1}},
+\code{\link{umass_2}},
+\code{\link{umass_neutrals}},
+\code{\link{upenn_1}},
+\code{\link{upenn_2}},
+\code{\link{vanderbilt_1}},
+\code{\link{vanderbilt_2}},
+\code{\link{vanderbilt_3}},
+\code{\link{willamette}},
+\code{\link{wm_1}},
+\code{\link{wm_2}},
+\code{\link{wm_3}},
+\code{\link{yale}},
+\code{\link{yeshiva}}
 }
 \author{
 \strong{unicol}, 2023-07-13.
 }
+\concept{U.S. university color palettes}
 \keyword{datasets}

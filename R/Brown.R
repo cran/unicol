@@ -4,7 +4,7 @@
 
 # Information: ------
 
-# uni_pals: "brown_1" , "brown_2" (2)  # ToDo: "brown_metallic" (3)
+# cur_pals: "brown_1" , "brown_2" (2)  # ToDo: "brown_metallic" (3)
 # inst: "Brown University" 
 # inst_alt: "Brown University"
 # country: USA
@@ -171,9 +171,9 @@ col_taupe <- "#B7B09C"
 #' 
 #' @examples
 #' brown_1
-#' unikn::seecol(brown_1, main = "Brown University") # view color palette
+#' unikn::seecol(brown_1, main = "Brown University 1") # view color palette
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes
 #'
 #' @seealso
 #' \code{\link{brown_2}} for secondary colors of Brown University;  
@@ -224,7 +224,7 @@ brown_1 <- unikn::newpal(col = c(col_red, col_brown, col_gold, col_gray),
 #' unikn::seecol(brown_2, 
 #'               main = "Secondary colors of Brown University") # view color palette
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes 
 #'
 #' @seealso
 #' \code{\link{brown_1}} for primary colors of Brown University; 

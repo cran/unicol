@@ -1,10 +1,10 @@
-## Irvine.R | 2023 07 24
+## Irvine.R | 2023 08 21
 ## Colors of the University of California, Irvine, USA
 ## ----------------------------------------------------
 
 # Information: ----
 
-# unipals: "uci_1", "uci_2", "uci_3", "uci_4" (4)
+# cur_pals: "uci_1", "uci_2", "uci_3", "uci_4" (4)
 # inst: "University of California, Irvine" 
 # country: USA
 # URL: "https://www.uci.edu"
@@ -43,7 +43,7 @@
 #' uci_1
 #' unikn::seecol(uci_1, main= "University of California, Irvine") #view color palette.
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes
 #'
 #' @seealso
 #' \code{\link{uci_2}} for secondary colors of UC Irvine;
@@ -97,7 +97,7 @@ uci_1 <- unikn::newpal(col = c("#0064a4", "#ffd200"),
 #' uci_2
 #' unikn::seecol(uci_2, main = "University of California, Irvine") # view color palette
 #' 
-#' @family university color palettes.
+#' @family U.S. university color palettes
 #'
 #' @seealso 
 #' \code{\link{uci_1}} for primary colors of UC Irvine;
@@ -128,11 +128,11 @@ uci_2 <- unikn::newpal(col = c("#6aa2b8", "#c6beb5", "#1b3d6d", "#f78d2d",
 #' \code{uci_3} provides the 5 tertiary colors of the 
 #' of the \href{https://www.uci.edu}{University of California Health, Irvine}, USA.
 #'
-#' The 5 teritary colors are
+#' The 5 tertiary colors are
 #' \code{"dark_orange"} (defined as HEX #b71234),
 #' \code{"bright_purple"} (defined as HEX #7c109a),
 #' \code{"turquoise"} (defined as HEX #00b0ca),
-#' \code{"lime_green"} (defined as HEX #7ab800) and 
+#' \code{"lime_green"} (defined as HEX #7ab800), and 
 #' \code{"yellow"} (defined as HEX #fecb00).
 #' 
 #' \code{uci_3} uses the HEX color definitions.
@@ -150,6 +150,8 @@ uci_2 <- unikn::newpal(col = c("#6aa2b8", "#c6beb5", "#1b3d6d", "#f78d2d",
 #' @examples 
 #' uci_3
 #' unikn::seecol(uci_3, main = "U of California, Irvine, 3") # view color palette
+#' 
+#' @family U.S. university color palettes
 #' 
 #' @seealso 
 #' \code{\link{uci_1}} for primary colors of UC Irvine;
@@ -198,6 +200,8 @@ uci_3 <- unikn::newpal(col = c("#b71234","#7c109a","#00b0ca","#7ab800","#fecb00"
 #' @examples 
 #' uci_4
 #' unikn::seecol(uci_4, main = "U of California, Irvine (4: neutral)") # view color palette
+#' 
+#' @family U.S. university color palettes
 #' 
 #' @seealso 
 #' \code{\link{uci_1}} for primary colors of UC Irvine;

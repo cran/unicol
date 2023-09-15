@@ -1,27 +1,32 @@
-## Guelph.R | 2023 07 12
+## Guelph.R | 2023 08 24
 ## Colors of the University of Guelph, Canada 
 ## ------------------------------------------
 
 # Information: ------ 
 
-# uni_pals: "guelph" (1)
+# cur_pals: "guelph" (1)
 # inst: "University of Guelph" (in English)
 # inst_alt: "University of Guelph"
 # country: Canada
-# URL: "https://www.uoguelph.ca/"
+# URL: "https://www.uoguelph.ca"
 
 # Color source:
 
-# URL: <https://news.uoguelph.ca/guides/brand-guide/colour-palette/>
+# color_URL: <https://news.uoguelph.ca/guides/brand-guide/colour-palette/>
 # Last check: 2023-07-12
 
 
-# - guelph: All colors ------
+# Colors: ------ 
+
+# Color palette(s):
+
+
+# - guelph: All colors of the University of Guelph ------
 
 #' Colors of the University of Guelph, Canada 
 #'
 #' \code{guelph} provides the two primary colors and the two secondary colors
-#' of the \href{https://www.uoguelph.ca/}{University of Guelph}, Canada.
+#' of the \href{https://www.uoguelph.ca}{University of Guelph}, Canada.
 #'
 #' The two primary colors are
 #' \code{"PMS_200"} (defined as RGB 194/4/48, HEX #C20430) and
@@ -32,7 +37,6 @@
 #' \code{"PMS_549"} (defined as RGB 105/163/185, HEX ##69A3B9).
 #'
 #' \code{guelph} uses the HEX color definitions. 
-#' 
 #' 
 #' @return 
 #' A named vector of colors (HEX/HTML codes of type character).
@@ -48,7 +52,7 @@
 #' guelph
 #' unikn::seecol(guelph, main = "Colors of the University of Guelph") # view color palette
 #'
-#' @family university color palettes
+#' @family Canadian university color palettes
 #'
 #' @seealso
 #' \code{\link{seecol}} for viewing and comparing color palettes;

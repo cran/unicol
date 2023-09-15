@@ -1,10 +1,10 @@
-## Michigan.R | 2023 08 15
+## Michigan.R | 2023 08 22
 ## Colors of Michigan University, USA
 ## ----------------------------------
 
 # Information: ------
 
-# uni_pals: "michigan_1", "michigan_2" (2)
+# cur_pals: "michigan_1", "michigan_2" (2)
 # inst: "University of Michigan"
 # country: USA
 # URL: "https://umich.edu"
@@ -23,7 +23,7 @@
 # Color palette(s):
 
 
-# - michigan_1: Primary colors ------
+# - michigan_1: Primary colors of UMichigan ------
 
 #' Primary colors of the University of Michigan, USA
 #'
@@ -53,7 +53,7 @@
 #' michigan_1
 #' unikn::seecol(michigan_1, main = "Primary colors Michigan Uni") # view color palette
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes
 #'
 #' @seealso
 #' \code{\link{michigan_2}} for secondary, secondary colors of the University of Michigan; 
@@ -74,7 +74,7 @@ michigan_1 <- unikn::newpal(col = c("#FFCB05", "#00274C"),
 
 
 
-# - michigan_2: Secondary colors ------
+# - michigan_2: Secondary colors of UMichigan ------
 
 #' Secondary colors of the University of Michigan, USA 
 #'
@@ -120,7 +120,7 @@ michigan_1 <- unikn::newpal(col = c("#FFCB05", "#00274C"),
 #' michigan_2
 #' unikn::seecol(michigan_2, main = "Secondary colors Michigan Uni") # view color palette
 #'
-#' @family university color palettes
+#' @family U.S. university color palettes
 #'
 #' @seealso
 #' \code{\link{michigan_1}} for primary colors of the University of Michigan; 

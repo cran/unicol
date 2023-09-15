@@ -4,7 +4,7 @@
 
 # Information: ----
 
-# unipals: "uni_kassel" (1)
+# cur_pals: "uni_kassel" (1)
 # inst: "University of Kassel" 
 # country: Germany
 # URL: "https://www.uni-kassel.de/uni//"
@@ -51,7 +51,7 @@
 #' uni_kassel
 #' unikn::seecol(uni_kassel, main = "University of Kassel") # view color palette.
 #'
-#' @family university color palettes
+#' @family German university color palettes
 #'
 #' @seealso
 #' \code{\link{seecol}} for viewing and comparing color palettes;

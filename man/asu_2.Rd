@@ -23,13 +23,13 @@ of the \href{https://www.asu.edu}{Arizona State University}, USA.
 }
 \details{
 The 7 secondary colors are
-\code{"asu_green"} (defined as HEX #78BE20),
-\code{"asu_blue"} (defined as HEX #00A3E0),
-\code{"asu_orange"} (defined as HEX #FF7F32),
-\code{"asu_gray"} (defined as HEX #747474), 
-\code{"asu_copper"} (defined as HEX #Af674B), 
-\code{"asu_turquoise"} (defined as HEX #4AB7C4), and 
-\code{"asu_pink"} (defined as HEX #E74973). 
+\code{"ASU green"} (defined as HEX #78BE20),
+\code{"ASU blue"} (defined as HEX #00A3E0),
+\code{"ASU orange"} (defined as HEX #FF7F32),
+\code{"ASU gray"} (defined as HEX #747474), 
+\code{"ASU copper"} (defined as HEX #Af674B), 
+\code{"ASU turquoise"} (defined as HEX #4AB7C4), and 
+\code{"ASU pink"} (defined as HEX #E74973). 
 
 \code{asu_2} uses the HEX color definitions.
 }
@@ -47,19 +47,101 @@ unikn::seecol(asu_2, main = "Arizona State University 2") # view color palette
 \code{\link{newpal}} for defining new color palettes;
 \code{\link{grepal}} for finding named colors.
 
-Other university color palettes.: 
+Other U.S. university color palettes: 
+\code{\link{CMU_1_core}},
+\code{\link{CMU_2_tartan}},
+\code{\link{CMU_3_campus}},
+\code{\link{UCLA_1}},
+\code{\link{UCLA_2}},
+\code{\link{UCLA_3}},
+\code{\link{UCLA_4}},
+\code{\link{UCSD_1}},
+\code{\link{UCSD_2}},
+\code{\link{UCSD_3}},
+\code{\link{asu_1}},
 \code{\link{asu_3}},
+\code{\link{berkeley_1}},
+\code{\link{berkeley_2}},
+\code{\link{brown_1}},
+\code{\link{brown_2}},
+\code{\link{bu}},
+\code{\link{caltech_1}},
+\code{\link{caltech_2}},
+\code{\link{caltech_3}},
+\code{\link{columbia}},
+\code{\link{cornell_1}},
+\code{\link{cornell_2}},
+\code{\link{cornell_3_accent}},
+\code{\link{dartmouth_1}},
 \code{\link{dartmouth_2}},
 \code{\link{dartmouth_3}},
-\code{\link{limerick_2}},
+\code{\link{duke_1}},
+\code{\link{duke_2}},
+\code{\link{harvard_1}},
+\code{\link{harvard_2}},
+\code{\link{harvard_3}},
+\code{\link{jhu_0}},
+\code{\link{jhu_1}},
+\code{\link{jhu_2}},
+\code{\link{jhu_3_accent}},
+\code{\link{jhu_4_gray}},
+\code{\link{manchester_uni_1}},
+\code{\link{manchester_uni_accent}},
+\code{\link{michigan_1}},
+\code{\link{michigan_2}},
+\code{\link{minnesotatwin_1}},
+\code{\link{minnesotatwin_2}},
+\code{\link{mit}},
+\code{\link{monash_1}},
+\code{\link{monash_2}},
+\code{\link{msu}},
+\code{\link{northwestern_1}},
+\code{\link{northwestern_2}},
+\code{\link{notredame_1}},
 \code{\link{notredame_2}},
-\code{\link{trinity_2}},
+\code{\link{nyu_1}},
+\code{\link{nyu_2}},
+\code{\link{nyu_accent}},
+\code{\link{nyu_neutral}},
+\code{\link{ohio_uni_1}},
+\code{\link{ohio_uni_2}},
+\code{\link{pitt_1}},
+\code{\link{pitt_2}},
+\code{\link{princeton_0}},
+\code{\link{princeton_1}},
+\code{\link{princeton_2}},
+\code{\link{rpi_1}},
+\code{\link{rpi_2}},
+\code{\link{rpi_3}},
+\code{\link{stanford_1}},
+\code{\link{stanford_2_accent}},
+\code{\link{stanford_3_web}},
+\code{\link{uchicago_1}},
+\code{\link{uchicago_2}},
+\code{\link{uci_1}},
 \code{\link{uci_2}},
+\code{\link{uci_3}},
+\code{\link{uci_4}},
+\code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
-\code{\link{vanderbilt_2}}
+\code{\link{uflorida_3}},
+\code{\link{umass_1}},
+\code{\link{umass_2}},
+\code{\link{umass_neutrals}},
+\code{\link{upenn_1}},
+\code{\link{upenn_2}},
+\code{\link{vanderbilt_1}},
+\code{\link{vanderbilt_2}},
+\code{\link{vanderbilt_3}},
+\code{\link{willamette}},
+\code{\link{wm_1}},
+\code{\link{wm_2}},
+\code{\link{wm_3}},
+\code{\link{yale}},
+\code{\link{yeshiva}}
 }
 \author{
 \strong{unicol}, 2320-07-13.
 }
-\concept{university color palettes.}
+\concept{U.S. university color palettes}
 \keyword{datasets}

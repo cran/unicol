@@ -3,32 +3,32 @@ org_opt <- options()  # store original user options
 
 options(max.print = "75")
 
-knitr::opts_chunk$set(echo = TRUE,
-                      cache = FALSE,
+knitr::opts_chunk$set(collapse = FALSE, 
+                      comment = "#>", 
                       prompt = FALSE,
                       tidy = FALSE,
-                      collapse = TRUE, 
-                      comment = "#>",
+                      echo = TRUE, 
                       message = FALSE,
                       warning = FALSE,
                       # Default figure options:
-                      # fig.width = 6, 
-                      # fig.asp = .80 # .618, # golden ratio
-                      fig.align = "center",
-                      out.width = "60%"
-)
+                      dpi = 100, 
+                      fig.align = 'center',
+                      fig.height = 5.0,
+                      fig.width  = 7.5,
+                      out.width = "600px")
 
 # URLs: ------ 
 
-# unikn:
-url_unikn <- "https://www.uni-konstanz.de/"
+# unicol package: 
+url_unicol_cran   <- "https://CRAN.R-project.org/package=unicol"
+url_unicol_github <- "https://github.com/hneth/unicol"
 
+# unikn / Uni Konstanz:
+url_unikn <- "https://www.uni-konstanz.de"
+
+# unikn package: 
 url_unikn_cran   <- "https://CRAN.R-project.org/package=unikn"
 url_unikn_github <- "https://github.com/hneth/unikn"
-
-# unicol: 
-url_unicol_cran   <- "" # "https://CRAN.R-project.org/package=unicol"
-url_unicol_github <- "https://github.com/hneth/unicol"
 
 ## ----load-unicol-pkg, message = FALSE, warning = FALSE------------------------
 # install.packages('unicol')  # install unicol from CRAN client
@@ -43,7 +43,7 @@ n_inst <- length(unique(unicol_data$inst))
 N <- length(unicol_data$pal)
 n <- 50 # N
 
-set.seed(102) # 77 102 123  # reproducible randomness
+set.seed(24) # reproducible randomness
 
 # A: Get sample_n of my_pals from all unicol_data$pal:
 sample_n <- sort(sample(x = 1:N, size = n, replace = FALSE))
@@ -87,20 +87,20 @@ my_main     <- paste0("Illustrating ", n, " unicol palettes (with ", col_count, 
 
 ## ----unicol-pals-example-stats, echo = FALSE, eval = FALSE--------------------
 #  # Stats (for n <- N):
-#  n_pals  # number of color palettes: 202 on 2023-04-08.
-#  n_inst  # number of institutions: 86 on 2023-08-03.
-#  # Colors:
-#  length(unlist(pal_list))          # number of colors: 1327 on 2023-04-08.
-#  length(unique(unlist(pal_list)))  # number of unique colors: 1130 on 2023-04-08.
+#  n_pals  # number of color palettes: 236 on 2023-09-14.
+#  n_inst  # number of institutions:   102 on 2023-09-14.
+#  # Colors (in current set):
+#  length(unlist(pal_list))          # number of colors: 253 on 2023-09-14.
+#  length(unique(unlist(pal_list)))  # number of unique colors: 222 on 2023-09-14.
 
 ## ----unicol-pals-table-sample, echo = FALSE, eval = FALSE---------------------
 #  knitr::kable(unicol_data[sample_n, ], caption = tab_caption)
 
-## ----unicol-pals-figure-sample, echo = FALSE, eval = TRUE, fig.width = 8, out.width = "90%", fig.asp = 1.5, fig.cap = fig_caption----
-# Figure: Illustrate color palettes:
-unikn::seecol(pal = pal_list,
-              pal_names = pal_names,         
-              main = my_main)
+## ----unicol-pals-figure-sample, echo = FALSE, eval = FALSE, fig.asp = 1.5, fig.cap = fig_caption----
+#  # Figure: Illustrate color palettes:
+#  unikn::seecol(pal = pal_list,
+#                pal_names = pal_names,
+#                main = my_main)
 
 ## ----unicol-pals-table-all, echo = FALSE, eval = TRUE-------------------------
 # Data:

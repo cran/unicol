@@ -32,7 +32,7 @@ The 12 secondary colors are
 \code{"pumpkin"} (defined as HEX #D45D00), 
 \code{"munster"} (defined as HEX #CB333B), 
 \code{"salmon"} (defined as HEX #E31C79), 
-\code{"autumnal_leaf"} (defined as HEX #6F263D), 
+\code{"autumnal leaf"} (defined as HEX #6F263D), 
 \code{"copper"} (defined as HEX #89532F), 
 \code{"bronze"} (defined as HEX #7e5c4d), 
 \code{"white"} (defined as HEX #FFFFFF), 
@@ -56,19 +56,19 @@ unikn::seecol(limerick_2, main = "University of Limerick 2") # view color palett
 \code{\link{newpal}} for defining new color palettes;
 \code{\link{grepal}} for finding named colors.
 
-Other university color palettes.: 
-\code{\link{asu_2}},
-\code{\link{asu_3}},
-\code{\link{dartmouth_2}},
-\code{\link{dartmouth_3}},
-\code{\link{notredame_2}},
-\code{\link{trinity_2}},
-\code{\link{uci_2}},
-\code{\link{uflorida_2}},
-\code{\link{vanderbilt_2}}
+Other Irish university color palettes: 
+\code{\link{UCC_1}},
+\code{\link{UCC_2}},
+\code{\link{UCD}},
+\code{\link{galway_1}},
+\code{\link{galway_2}},
+\code{\link{limerick_1}},
+\code{\link{maynooth}},
+\code{\link{trinity_1}},
+\code{\link{trinity_2}}
 }
 \author{
 \strong{unicol}, 2320-07-16.
 }
-\concept{university color palettes.}
+\concept{Irish university color palettes}
 \keyword{datasets}

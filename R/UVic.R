@@ -1,14 +1,19 @@
-## UVic.R | 2023 06 29
+## UVic.R | 2023 08 24
 ## University of Victoria, Canada 
 ## ------------------------------
 
 # Information: ------
 
-# uni_pals: "uvic_core", "uvic_complementary" (2)
+# cur_pals: "uvic_core", "uvic_complementary" (2)
 # inst: "UVic"
 # inst_alt: "University of Victoria"
 # country: Canada
-# URL: "https://www.uvic.ca/"
+# URL: "https://www.uvic.ca"
+
+
+
+# Colors: ------
+
 
 # Colour source:
 
@@ -19,20 +24,20 @@
 
 # Colour palettes:
 
-# - uvic_core: Core colours ------
+# - uvic_core: Core colours of the University of Victoria ------
 
-#' Core colours of University of Victoria
+#' Core colours of University of Victoria, Canada 
 #'
-#' \code{uvic_core} provides the core colours 
+#' \code{uvic_core} provides four core colours 
 #' of \href{https://www.uvic.ca/}{University of Victoria}, Canada. 
 #'
-#' The core UVic colours can be used in various combinations 
+#' The 4 core UVic colours can be used in various combinations 
 #' depending on audience and medium. The dominant colours are blue and yellow, 
 #' with red used as an accent colour. Dark blue works well as a background and 
 #' type colour. The core colours have to be present on all external communications 
 #' and marketing materials to establish and build recognition by association.
 #' 
-#' The core colours are 
+#' The 4 core colours are 
 #' \code{"uvic_blue"} (defined as HEX #005493 or RGB 0/94/184), 
 #' \code{"uvic_yellow"} (defined as HEX #F5AA1C or RGB 234/170/0),
 #' \code{"uvic_red"} (defined as HEX #C63527 or RGB 210/38/48), and
@@ -57,7 +62,7 @@
 #' uvic_core
 #' unikn::seecol(uvic_core, main = "UVic core palette") # view colour palette
 #'
-#' @family university color palettes
+#' @family Canadian university color palettes 
 #'
 #' @seealso
 #' \code{\link{uvic_complementary}} for the complementary colour palette of University of Victoria;
@@ -81,16 +86,16 @@ uvic_core <- unikn::newpal(col = c("#005493", "#F5AA1C", "#C63527", "#002754"),
 
 # - uvic_complementary: Complementary colours ------
 
-#' Complementary colours of University of Victoria
+#' Complementary colours of the University of Victoria, Canada 
 #'
-#' \code{uvic_complementary} provides the complementary colours 
+#' \code{uvic_complementary} provides the eight complementary colours 
 #' of \href{https://www.uvic.ca/}{University of Victoria}, Canada. 
 #'
-#' The complementary colours are a way for faculties to distinguish themselves 
+#' The 8 complementary colours are a way for faculties to distinguish themselves 
 #' from each other and for the university to have a strong visual organization system. 
 #' They're used in faculty materials to support and complement the core colours. 
 #' 
-#' The complementary colours are 
+#' The 8 complementary colours are 
 #' \code{"education"} (defined as HEX #0171BC or RGB 0/113/188), 
 #' \code{"engineering"} (defined as HEX #F08415 or RGB 255/117/0),
 #' \code{"fine_arts"} (defined as HEX #00894C or RGB 0/135/62), 
@@ -119,7 +124,7 @@ uvic_core <- unikn::newpal(col = c("#005493", "#F5AA1C", "#C63527", "#002754"),
 #' uvic_complementary
 #' unikn::seecol(uvic_complementary, main = "UVic complementary colour palette") # view colour palette
 #'
-#' @family university color palettes
+#' @family Canadian university color palettes 
 #'
 #' @seealso
 #' \code{\link{uvic_core}} for the core colour palette of University of Victoria;
@@ -131,17 +136,14 @@ uvic_core <- unikn::newpal(col = c("#005493", "#F5AA1C", "#C63527", "#002754"),
 #'
 #' @export
 
-uvic_complementary <- unikn::newpal(col = c("#0171BC", "#F08415", "#00894C", "#00AAD5", "#D64500", "#523E7C", "#009C90", "#69A81D"),
-                                    names = c("education", "engineering", "fine_arts", "human_and_social_development", "humanities", "law", "science", "social_sciences"),
+uvic_complementary <- unikn::newpal(col = c("#0171BC", "#F08415", "#00894C", "#00AAD5", 
+                                            "#D64500", "#523E7C", "#009C90", "#69A81D"),
+                                    names = c("education", "engineering", "fine_arts", "human_and_social_development", 
+                                              "humanities", "law", "science", "social_sciences"),
                                     as_df = FALSE)
 
 # # Check: 
 # unikn::seecol(uvic_complementary, main = "UVic complementary colours")
-
-
-
-
-
 
 
 ## ToDo: -------- 

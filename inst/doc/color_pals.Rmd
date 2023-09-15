@@ -18,47 +18,47 @@ org_opt <- options()  # store original user options
 
 options(max.print = "75")
 
-knitr::opts_chunk$set(echo = TRUE,
-                      cache = FALSE,
+knitr::opts_chunk$set(collapse = FALSE, 
+                      comment = "#>", 
                       prompt = FALSE,
                       tidy = FALSE,
-                      collapse = TRUE, 
-                      comment = "#>",
+                      echo = TRUE, 
                       message = FALSE,
                       warning = FALSE,
                       # Default figure options:
-                      # fig.width = 6, 
-                      # fig.asp = .80 # .618, # golden ratio
-                      fig.align = "center",
-                      out.width = "60%"
-)
+                      dpi = 100, 
+                      fig.align = 'center',
+                      fig.height = 5.0,
+                      fig.width  = 7.5,
+                      out.width = "600px")
 
 # URLs: ------ 
 
-# unikn:
-url_unikn <- "https://www.uni-konstanz.de/"
+# unicol package: 
+url_unicol_cran   <- "https://CRAN.R-project.org/package=unicol"
+url_unicol_github <- "https://github.com/hneth/unicol"
 
+# unikn / Uni Konstanz:
+url_unikn <- "https://www.uni-konstanz.de"
+
+# unikn package: 
 url_unikn_cran   <- "https://CRAN.R-project.org/package=unikn"
 url_unikn_github <- "https://github.com/hneth/unikn"
-
-# unicol: 
-url_unicol_cran   <- "" # "https://CRAN.R-project.org/package=unicol"
-url_unicol_github <- "https://github.com/hneth/unicol"
 ```
 
 <!-- unikn logo and link: -->
 <!-- <a href = "`r url_unikn`"> -->
-<!-- <img src = "../inst/pix/logo_unikn.png" alt = "unikn::" align = "right" width = "300px" style = "width: 300px; float: right; border:0;"/> -->
+<!-- <img src = "../man/figures/logo_unikn.png" alt = "unikn::" align = "right" width = "300px" style = "width: 300px; float: right; border:0;"/> -->
 <!-- </a> -->
 
 <!-- unikn pkg logo and link: -->
 <!-- <a href = "`r url_unikn_cran`"> -->
-<!-- <img src = "../inst/pix/logo_unikn_pkg.png" alt = "unikn::" align = "right" width = "140px" style = "width: 140px; float: right; border:0;"/> -->
+<!-- <img src = "../man/figures/logo_unikn_pkg.png" alt = "unikn::" align = "right" width = "140px" style = "width: 140px; float: right; border:0;"/> -->
 <!-- </a> -->
 
 <!-- unicol pkg logo and link: -->
-<a href = "`r url_unicol_github`">
-<img src = "../inst/pix/logo.png" alt = "unicol::" align = "right" width = "165px" style = "width: 165px; float: right; border:0;"/>
+<a href = "`r url_unicol_cran`">
+<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
 </a>
 
 This vignettes provides an overview of the **color palettes** provided by the **unicol** package. 
@@ -89,7 +89,7 @@ The **unicol** package currently provides **`r n_pals`\ color palettes** from **
 N <- length(unicol_data$pal)
 n <- 50 # N
 
-set.seed(102) # 77 102 123  # reproducible randomness
+set.seed(24) # reproducible randomness
 
 # A: Get sample_n of my_pals from all unicol_data$pal:
 sample_n <- sort(sample(x = 1:N, size = n, replace = FALSE))
@@ -134,11 +134,11 @@ my_main     <- paste0("Illustrating ", n, " unicol palettes (with ", col_count, 
 
 ```{r unicol-pals-example-stats, echo = FALSE, eval = FALSE}
 # Stats (for n <- N):
-n_pals  # number of color palettes: 202 on 2023-04-08. 
-n_inst  # number of institutions: 86 on 2023-08-03.
-# Colors:
-length(unlist(pal_list))          # number of colors: 1327 on 2023-04-08. 
-length(unique(unlist(pal_list)))  # number of unique colors: 1130 on 2023-04-08. 
+n_pals  # number of color palettes: 236 on 2023-09-14. 
+n_inst  # number of institutions:   102 on 2023-09-14.
+# Colors (in current set):
+length(unlist(pal_list))          # number of colors: 253 on 2023-09-14. 
+length(unique(unlist(pal_list)))  # number of unique colors: 222 on 2023-09-14. 
 ```
 
 
@@ -151,15 +151,16 @@ knitr::kable(unicol_data[sample_n, ], caption = tab_caption)
 
 <!-- Show as figure: -->
 
-**Figure\ 1** illustrates `r n` random color palettes: 
+**Figure\ 1** illustrates a random sample of `r n` color palettes: 
 
-```{r unicol-pals-figure-sample, echo = FALSE, eval = TRUE, fig.width = 8, out.width = "90%", fig.asp = 1.5, fig.cap = fig_caption}
+```{r unicol-pals-figure-sample, echo = FALSE, eval = FALSE, fig.asp = 1.5, fig.cap = fig_caption}
 # Figure: Illustrate color palettes:
 unikn::seecol(pal = pal_list,
               pal_names = pal_names,         
               main = my_main)
 ```
 
+![**Figure 1:** Examples of **unicol** color palettes.](../man/figures/README-unicol-pals-example-1-figure-1.png)
 
 ### Overview
 
@@ -182,8 +183,8 @@ knitr::kable(all_pals_df, caption = tab_caption, row.names = TRUE)
 ## Your color palettes
 
 <!-- unicol pkg logo and link: -->
-<!-- <a href = "`r url_unicol_github`"> -->
-<!-- <img src = "./inst/pix/logo.png" alt = "unicol::" align = "right" width = "165px" style = "width: 165px; float: right; border:0;"/> -->
+<!-- <a href = "`r url_unicol_cran`"> -->
+<!-- <img src = "./man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/> -->
 <!-- </a>  -->
 
 The current range of color palettes included in **unicol** is selective and incomplete. 
@@ -199,7 +200,7 @@ The vignette on [Institutional colors](https://hneth.github.io/unikn/articles/co
 
 <!-- ToDo: -->
 <a href = "https://github.com/hneth/unicol/issues/30">
-<img src = "../inst/pix/todo.png" alt = "unicol::todo" align = "right" width = "165px" style = "width: 165px; float: right; border:0;"/>
+<img src = "../man/figures/todo.png" alt = "unicol::todo" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
 </a>
 
 If you do create a new color palette, **please let us know** (on this [GitHub issue](https://github.com/hneth/unicol/issues/30)) 
@@ -218,8 +219,8 @@ We're looking forward to **your inputs and contributions** (at this [GitHub issu
 ## Vignettes
 
 <!-- unicol pkg logo and link: -->
-<a href = "`r url_unicol_github`">
-<img src = "../inst/pix/logo.png" alt = "unicol::" align = "right" width = "165px" style = "width: 165px; float: right; border:0;"/>
+<a href = "`r url_unicol_cran`">
+<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
 </a>
 
 The following vignettes provide an overview of and examples for using the **unicol** color palettes: 
