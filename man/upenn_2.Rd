@@ -3,13 +3,13 @@
 \docType{data}
 \name{upenn_2}
 \alias{upenn_2}
-\title{Web colors of University of Pennsylvania, USA}
+\title{Web colors of the University of Pennsylvania (UPenn), USA}
 \format{
 An object of class \code{character} of length 12.
 }
 \source{
-Color definitions are based on the
-\href{https://branding.web-resources.upenn.edu/web-identity}{Color manual}.
+Color definitions are based on \href{https://www.upenn.edu}{UPenn}'s 
+\href{https://branding.web-resources.upenn.edu/logos-and-branding/elements-penn-logo}{Color manual}.
 }
 \usage{
 upenn_2
@@ -19,28 +19,28 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{upenn_2} provides the twelve web colors
-of the \href{https://www.upenn.edu/}{University of Pennsylvania}, USA.
+of the \href{https://www.upenn.edu}{University of Pennsylvania} (UPenn), USA.
 }
 \details{
 These 12 web colors are 
-\code{"penn_blue"} (defined as HEX #011F5B),
-\code{"penn_red"} (defined as HEX #990000),
-\code{"penn_blue2"} (defined as HEX #82AFD3),
-\code{"penn_orange"} (defined as HEX #C35A00),
-\code{"penn_green"} (defined as HEX #008e00),
-\code{"penn_yellow"} (defined as HEX #F2C100),
-\code{"penn_purple"} (defined as HEX #4A0042),
-\code{"penn_grey1"} (defined as HEX #F2F2F2),
-\code{"penn_grey2"} (defined as HEX #F7F7F7),
-\code{"penn_grey3"} (defined as HEX #CCCCCC),
-\code{"penn_grey4"} (defined as HEX #999999), and
-\code{"penn_black"} (defined as HEX #333333).
+\code{"UPenn blue"} (defined as HEX #011F5B),
+\code{"UPenn red"} (defined as HEX #990000),
+\code{"UPenn blue2"} (defined as HEX #82AFD3),
+\code{"UPenn orange"} (defined as HEX #C35A00),
+\code{"UPenn green"} (defined as HEX #008e00),
+\code{"UPenn yellow"} (defined as HEX #F2C100),
+\code{"UPenn purple"} (defined as HEX #4A0042),
+\code{"UPenn grey1"} (defined as HEX #F2F2F2),
+\code{"UPenn grey2"} (defined as HEX #F7F7F7),
+\code{"UPenn grey3"} (defined as HEX #CCCCCC),
+\code{"UPenn grey4"} (defined as HEX #999999), and
+\code{"UPenn black"} (defined as HEX #333333).
 
 \code{upenn_2} uses the HEX color definitions.
 }
 \examples{
 upenn_2
-unikn::seecol(upenn_2, main = "Web colors of UPenn") # view color palette
+unikn::seecol(upenn_2, main = "Web colors of UPenn")  # view color palette
 
 }
 \seealso{
@@ -52,16 +52,6 @@ unikn::seecol(upenn_2, main = "Web colors of UPenn") # view color palette
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -73,7 +63,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -91,7 +86,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -119,14 +114,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

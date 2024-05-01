@@ -8,8 +8,8 @@
 An object of class \code{character} of length 11.
 }
 \source{
-Color definitions are based on 
-\href{https://onmessage.nd.edu/university-branding/colors/}{ND's website}.
+Color definitions are based on \href{https://www.nd.edu}{Notre Dame}'s
+\href{https://onmessage.nd.edu/university-branding/colors/}{branding site}.
 }
 \usage{
 notredame_2
@@ -23,17 +23,17 @@ of the \href{https://www.nd.edu}{University of Notre Dame}, USA.
 }
 \details{
 The 11 secondary colors are 
-\code{"brand_blue_light"} (defined as HEX #143865),
-\code{"brand_blue_bright"} (defined as HEX #1c4f8f),
-\code{"brand_gold_dark"} (defined as HEX #8c7535),
-\code{"brand_gold_light"} (defined as HEX #d39f10), 
-\code{"sky_blue"} (defined as HEX #e1e8f2), 
-\code{"sky_blue_dark"} (defined as HEX #c1cddd), 
-\code{"sky_blue_light"} (defined as HEX #edf2f9), 
-\code{"warm_white"} (defined as HEX #f8f4ec), 
-\code{"warm_white_dark"} (defined as HEX #efe9d9), 
-\code{"brand_green"} (defined as HEX #0a843d), and 
-\code{"brand_green_light"} (defined as HEX #b3dac5).
+\code{"Brand blue light"} (defined as HEX #143865),
+\code{"Brand blue bright"} (defined as HEX #1c4f8f),
+\code{"Brand gold dark"} (defined as HEX #8c7535),
+\code{"Brand gold light"} (defined as HEX #d39f10), 
+\code{"Sky blue"} (defined as HEX #e1e8f2), 
+\code{"Sky blue dark"} (defined as HEX #c1cddd), 
+\code{"Sky blue light"} (defined as HEX #edf2f9), 
+\code{"Warm white"} (defined as HEX #f8f4ec), 
+\code{"Warm white dark"} (defined as HEX #efe9d9), 
+\code{"Brand green"} (defined as HEX #0a843d), and 
+\code{"Brand green light"} (defined as HEX #b3dac5).
 
 \code{notredame_2} uses the HEX color definitions.
 }
@@ -51,16 +51,6 @@ unikn::seecol(notredame_2, main = "University of Notre Dame") # view color palet
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -72,7 +62,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -90,7 +85,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -117,14 +112,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

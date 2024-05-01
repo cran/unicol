@@ -8,7 +8,7 @@
 An object of class \code{character} of length 4.
 }
 \source{
-Color definitions are based on the
+Color definitions are based on \href{https://www.berkeley.edu}{Berkeley}'s 
 \href{https://brand.berkeley.edu/identity-and-visual-design/color}{Color manual}.
 }
 \usage{
@@ -19,15 +19,31 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{berkeley_1} provides the four primary colors
-of the \href{https://www.berkeley.edu}{Berkeley, University of California}, USA.
+of \href{https://www.berkeley.edu}{Berkeley, University of California}, USA.
 }
 \details{
-The primary palette is broken into heritage and alternate heritage colors.
-Primary colors are
+The 4 primary colors are
 \code{"Berkeley blue"} (defined as HEX #003262, CMYK 100/71/10/47, Pantone 282),
 \code{"California gold"} (defined as HEX #FDB515, CMYK 0/32/100/0, Pantone 123),
-\code{"founders rock"} (defined as HEX #3B7EA1, CMYK 76/34/21/0, Pantone 7697), and
-\code{"medalist"} (defined as HEX #C4820E, CMYK 0/34/98/12, Pantone 7550).
+\code{"Founders rock"} (defined as HEX #3B7EA1, CMYK 76/34/21/0, Pantone 7697), and
+\code{"Medalist"} (defined as HEX #C4820E, CMYK 0/34/98/12, Pantone 7550).
+
+
+The primary palette is broken into heritage and alternate heritage colors. 
+
+The primary colors, called heritage colors, are \code{Berkeley blue} and \code{California gold}. 
+They represent \href{https://www.berkeley.edu}{Berkeley} at the highest level and should be present in all communications. 
+These colors look best as spot inks, and do not reproduce as richly in four-color process. 
+Never use screens or tints of heritage colors. 
+
+The alternate heritage colors were created to expand the primary palette. 
+They may be used to complement the primary heritage colors but should never completely replace them 
+as main representations of \href{https://www.berkeley.edu}{Berkeley}. 
+For example, \code{Medalist} may replace \code{California gold} in situations 
+where a darker gold is needed.
+
+See the \href{https://brand.berkeley.edu/identity-and-visual-design/color}{Color manual} 
+for accessible and suitable combinations.
 }
 \examples{
 berkeley_1
@@ -35,7 +51,7 @@ unikn::seecol(berkeley_1, main = "Primary colors of Berkeley") # view color pale
 
 }
 \seealso{
-\code{\link{berkeley_2}} for the secondary colors of Berkeley, University of California; 
+\code{\link{berkeley_2}} for secondary colors of Berkeley, University of California; 
 \code{\link{seecol}} for viewing and comparing color palettes;
 \code{\link{usecol}} for using color palettes;
 \code{\link{simcol}} for finding similar colors;
@@ -43,16 +59,6 @@ unikn::seecol(berkeley_1, main = "Primary colors of Berkeley") # view color pale
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -63,7 +69,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -81,7 +92,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -109,14 +120,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

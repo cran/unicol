@@ -8,8 +8,8 @@
 An object of class \code{character} of length 1.
 }
 \source{
-Color definitions are based on 
-\href{https://communications.dartmouth.edu/visual-identity/design-elements/color-palette}{Dartmouth's visual identity guide}.
+Color definitions are based on \href{https://home.dartmouth.edu}{Dartmouth}'s 
+\href{https://communications.dartmouth.edu/visual-identity/design-elements/color-palette}{visual identity guide}.
 }
 \usage{
 dartmouth_1
@@ -23,18 +23,18 @@ of \href{https://home.dartmouth.edu}{Dartmouth College}, USA.
 }
 \details{
 The primary color is
-\code{"dartmouth_green"} (defined as HEX #00693E). 
+\code{"Dartmouth green"} (defined as HEX #00693E). 
 
 \code{dartmouth_1} uses the HEX color definitions.
 }
 \examples{
 dartmouth_1
-unikn::seecol(dartmouth_1, main = "Dartmouth College 1") # view color palette.
+unikn::seecol(dartmouth_1, main = "Primary color of Dartmouth College") # view palette
 
 }
 \seealso{
-\code{\link{dartmouth_2}} for the secondary colors of Dartmouth College; 
-\code{\link{dartmouth_3}} for the tertiary colors of Dartmouth College; 
+\code{\link{dartmouth_2}} for secondary colors of Dartmouth College; 
+\code{\link{dartmouth_3}} for tertiary colors of Dartmouth College; 
 \code{\link{seecol}} for viewing and comparing color palettes;
 \code{\link{usecol}} for using color palettes;
 \code{\link{simcol}} for finding similar colors;
@@ -42,16 +42,6 @@ unikn::seecol(dartmouth_1, main = "Dartmouth College 1") # view color palette.
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -63,7 +53,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -80,7 +75,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -108,14 +103,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

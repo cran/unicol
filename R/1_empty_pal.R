@@ -1,4 +1,4 @@
-## _.R | 2023 09 03
+## .R | 2023 10 14
 ## Colors of Institution, Country
 ## ------------------------------
 
@@ -9,11 +9,13 @@
 # cur_pals: "x", "y" (2)
 
 # inst: "" 
+# inst_alt: ""
 # country: 
 # inst_URL: <>
 
 # Color source: HTML: / PDF 
 # color_URL: <>
+# Last check: 2023-10-14
 
 
 # Colors: ------

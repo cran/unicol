@@ -38,7 +38,7 @@ These colours and tints of these colours may be used on \href{https://www.maynoo
 }
 \examples{
 maynooth
-unikn::seecol(maynooth, main = "Colours of Maynooth University, IE") # view color palette
+unikn::seecol(maynooth, main = "The colours of Maynooth University, IE")  # view palette
 
 }
 \seealso{
@@ -49,15 +49,15 @@ unikn::seecol(maynooth, main = "Colours of Maynooth University, IE") # view colo
 \code{\link{grepal}} for finding named colors.
 
 Other Irish university color palettes: 
-\code{\link{UCC_1}},
-\code{\link{UCC_2}},
-\code{\link{UCD}},
 \code{\link{galway_1}},
 \code{\link{galway_2}},
 \code{\link{limerick_1}},
 \code{\link{limerick_2}},
 \code{\link{trinity_1}},
-\code{\link{trinity_2}}
+\code{\link{trinity_2}},
+\code{\link{ucc_1}},
+\code{\link{ucc_2}},
+\code{\link{ucd}}
 }
 \author{
 \strong{unicol}, 2023-09-09.

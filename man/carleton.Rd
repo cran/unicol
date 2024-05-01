@@ -25,7 +25,7 @@ of the \href{https://carleton.ca/}{University of Carleton}, Canada.
 The 2 official colors are
 \code{maize} (defined as Pantone 122, 
 and approximated by RGB 255/223/79, or HEX #FFDF4F), and
-\code{blue_carleton} (defined as Pantone 294, 
+\code{Carleton blue} (defined as Pantone 294, 
 and approximated by RGB 0/48/105, or HEX #003069).
 
 \code{carleton} uses the HEX color definitions.
@@ -33,7 +33,7 @@ and approximated by RGB 0/48/105, or HEX #003069).
 \examples{
 carleton
 unikn::seecol(carleton, 
-              main = "Colors of the University of Carleton") # view color palette
+              main = "The colors of the University of Carleton, CA") # view color palette
 
 }
 \seealso{
@@ -44,10 +44,10 @@ unikn::seecol(carleton,
 \code{\link{grepal}} for finding named colors.
 
 Other Canadian university color palettes: 
-\code{\link{conc_1}},
-\code{\link{conc_2}},
-\code{\link{conc_3}},
-\code{\link{conc_4}},
+\code{\link{concordia_1}},
+\code{\link{concordia_2}},
+\code{\link{concordia_3}},
+\code{\link{concordia_4}},
 \code{\link{guelph}},
 \code{\link{laval}},
 \code{\link{manitoba_1}},
@@ -65,15 +65,15 @@ Other Canadian university color palettes:
 \code{\link{queensu_1}},
 \code{\link{queensu_2}},
 \code{\link{sfu_brand}},
-\code{\link{ubc_1}},
+\code{\link{ubc}},
 \code{\link{ucalgary_1}},
 \code{\link{ucalgary_2}},
 \code{\link{ucalgary_accent}},
 \code{\link{ucalgary_warmgreys}},
 \code{\link{uottawa}},
 \code{\link{utoronto}},
-\code{\link{uvic_complementary}},
-\code{\link{uvic_core}},
+\code{\link{uvic_1}},
+\code{\link{uvic_2}},
 \code{\link{uwaterloo_arts}},
 \code{\link{uwaterloo_engineering}},
 \code{\link{uwaterloo_environment}},

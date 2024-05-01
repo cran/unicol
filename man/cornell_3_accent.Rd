@@ -8,7 +8,7 @@
 An object of class \code{character} of length 9.
 }
 \source{
-Color definitions are based on the
+Color definitions are based on \href{https://www.cornell.edu}{Cornell}'s 
 \href{https://brand.cornell.edu/design-center/colors/}{Color manual}.
 }
 \usage{
@@ -19,27 +19,32 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{cornell_3_accent} provides the nine primary colors
-of the \href{https://www.cornell.edu/}{Cornell University}, USA.
+of \href{https://www.cornell.edu}{Cornell University}, USA.
 }
 \details{
-Although our primary and secondary palettes should guide most layouts, in certain instances other colors may be needed.
-For those circumstances, refer to the accent palette.
-These colors should not be used as full-color bleeds and should be used periodically and in moderation.
+The 9 secondary colors are 
+\code{"Cornell blue"} (defined as HEX #006699),
+\code{"Cornell green graphics"} (defined as HEX #6EB43F),
+\code{"Cornell green text"} (defined as HEX #4B7B2B),
+\code{"Cornell green text big"} (defined as HEX #578E32),
+\code{"Cornell orange graphics"} (defined as HEX #F8981D),
+\code{"Cornell orange text"} (defined as HEX #D47500),
+\code{"Cornell red graphics"} (defined as HEX #EF4035),
+\code{"Cornell red text"} (defined as HEX #DF1E12), and
+\code{"Cornell navy"} (defined as HEX #073949).
 
-This secondary colors are 
-\code{"cornell_blue"} (defined as HEX #006699),
-\code{"cornell_green_graphic"} (defined as HEX #6EB43F),
-\code{"cornell_green_text"} (defined as HEX #4B7B2B),
-\code{"cornell_green_text_big"} (defined as HEX #578E32),
-\code{"cornell_orange_graphic"} (defined as HEX #F8981D),
-\code{"cornell_orange_text"} (defined as HEX #D47500),
-\code{"cornell_red_graphic"} (defined as HEX #EF4035),
-\code{"cornell_red_text"} (defined as HEX #DF1E12), and
-\code{"cornell_navy"} (defined as HEX #073949).
+
+Although the primary and secondary color palettes 
+(see \code{\link{cornell_1}} and \code{\link{cornell_2}}) 
+should guide most layouts, in certain instances other colors may be needed.
+
+For those circumstances, refer to the accent palette (\code{cornell_3_accent}). 
+These colors should not be used as full-color bleeds and should be used 
+periodically and in moderation.
 }
 \examples{
 cornell_3_accent
-unikn::seecol(cornell_3_accent, main = "Accent colors Cornell Uni") # view color palette
+unikn::seecol(cornell_3_accent, main = "Accent colors of Cornell University")  # view palette
 
 }
 \seealso{
@@ -52,16 +57,6 @@ unikn::seecol(cornell_3_accent, main = "Accent colors Cornell Uni") # view color
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -73,7 +68,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{dartmouth_1}},
@@ -90,7 +90,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -118,14 +118,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

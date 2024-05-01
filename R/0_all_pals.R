@@ -1,12 +1,11 @@
-## all_pals.R | 2022 09 15
-## An inventory of all color palettes
-## ----------------------------------
+## 0_all_pals.R | 2022 10 15
+## Inventory of all color palettes
+## -------------------------------
 
-# Goal: Provide an inventory of color palettes.
-#       A record / registry of all color palettes
-#       (and institutions and corresponding labels).
+# Goal: Provide an inventory / record / registry of color palettes
+#       (and corresponding institutions, labels, and URLs).
 
-# Meta-information on all exported color palettes: -----
+# A. Meta-information on all exported color palettes: ------ 
 
 uni_pals <- c("eth_1", "eth_2", "eth_3",
               "fu_0", "fu_1", "fu_2", "fu_3",
@@ -30,15 +29,15 @@ uni_pals <- c("eth_1", "eth_2", "eth_3",
               "asu_1 <-", "asu_2 <-", "asu_3 <-", 
               "berkeley_1 <-", "berkeley_2 <-", 
               "birmingham <-", 
-              "ubc_1 <-", 
+              "ubc <-", 
               "brown_1 <-", "brown_2 <-", 
               "bu <-", 
               "caltech_1 <-", "caltech_2 <-", "caltech_3 <-", 
               "carleton <-", 
               "uchicago_1 <-", "uchicago_2 <-", 
-              "CMU_1_core <-", "CMU_2_tartan <-", "CMU_3_campus <-", 
-              "columbia <-", 
-              "conc_1 <-", "conc_2 <-", "conc_3 <-", "conc_4 <-", 
+              "cmu_1 <-", "cmu_2 <-", "cmu_3 <-", 
+              "columbia_1 <-", "columbia_2 <-", "columbia_3 <-",   
+              "concordia_1 <-", "concordia_2 <-", "concordia_3 <-", "concordia_4 <-", 
               "cornell_1 <-", "cornell_2 <-", "cornell_3_accent <-", 
               "dartmouth_1 <-", "dartmouth_2 <-", "dartmouth_3 <-", 
               "trinity_1 <-", "trinity_2 <-", 
@@ -56,7 +55,7 @@ uni_pals <- c("eth_1", "eth_2", "eth_3",
               "lancaster_1 <-", "lancaster_2 <-", 
               "laval <-", 
               "limerick_1 <-", "limerick_2 <-", 
-              "manchester_uni_1 <-", "manchester_uni_accent <-", 
+              "manchester_uni_1 <-", "manchester_uni_2 <-", 
               "manitoba_1 <-", "manitoba_2 <-", 
               "mcgill_red <-", "mcgill_pastels <-", "mcgill_brights <-", "mcgill_muted <-", "mcgill_darks <-", "mcgill_grey <-", 
               "mcmaster_heritage <-", "mcmaster_brighterworld <-", 
@@ -75,19 +74,19 @@ uni_pals <- c("eth_1", "eth_2", "eth_3",
               "uni_potsdam <-", 
               "queensu_1 <-", "queensu_2 <-", 
               "sfu_brand <-", 
-              "stanford_1 <-", "stanford_2_accent <-", "stanford_3_web <-", 
+              "stanford_1 <-", "stanford_2 <-", "stanford_3 <-", 
               "standrews_1 <-", "standrews_2 <-", 
               "utoronto <-", 
               "ucalgary_1 <-", "ucalgary_2 <-", "ucalgary_warmgreys <-", "ucalgary_accent <-", 
-              "UCLA_1 <-", "UCLA_2 <-", "UCLA_3 <-", "UCLA_4 <-", 
-              "UCSD_1 <-", "UCSD_2 <-", "UCSD_3 <-", 
+              "ucla_1 <-", "ucla_2 <-", "ucla_3 <-", "ucla_4 <-", 
+              "ucsd_1 <-", "ucsd_2 <-", "ucsd_3 <-", 
               "umass_1 <-", "umass_2 <-", "umass_neutrals <-", 
               "uni_goettingen_1 <-", "uni_goettingen_2 <-", "uni_goettingen_3 <-", 
               "uni_heidelberg <-", 
               "uni_manchester <-", 
               "uni_stuttgart_1 <-", "uni_stuttgart_print <-", 
               "upenn_1 <-", "upenn_2 <-", 
-              "uvic_core <-", "uvic_complementary <-", 
+              "uvic_1 <-", "uvic_2 <-", 
               "uwaterloo_main <-", "uwaterloo_arts <-", "uwaterloo_engineering <-", "uwaterloo_environment <-", "uwaterloo_health <-", "uwaterloo_math <-", "uwaterloo_science <-", 
               "vanderbilt_1 <-", "vanderbilt_2 <-", "vanderbilt_3 <-", 
               "waikato <-", 
@@ -95,23 +94,38 @@ uni_pals <- c("eth_1", "eth_2", "eth_3",
               "yale <-", 
               "yeshiva <-", 
               "yorku_1 <-", "yorku_2 <-",
-              # NEW after v0.1.0: 
+              # NEW in v0.2.0: 
               "groningen_1", "groningen_2",
               "uni_lisbon",
               "willamette",
               "ohio_uni_1", "ohio_uni_2", 
               "wm_1", "wm_2", "wm_3",
               "nottingham_1", "nottingham_2", "nottingham_3",
-              "ANU_1", "ANU_2",
+              "anu_1", "anu_2",
               "mq_1", "mq_2",
               "wollongong_1", "wollongong_2",
               "auckland_1", "auckland_2",
               "otago",
               "maynooth",
-              "UCC_1", "UCC_2",
+              "ucc_1", "ucc_2",
               "cardiff_1", "cardiff_2", 
               "aberystwyth_1", "aberystwyth_2",
-              "UCD"
+              "ucd",
+              # NEW after v0.2.0:
+              "stirling_1", "stirling_2", "stirling_3", 
+              "uni_magdeburg_1", "uni_magdeburg_2", "uni_magdeburg_3",
+              "uni_halle",
+              "bangor_1", "bangor_2", "bangor_3", "bangor_4",
+              "oslo", 
+              "bergen_1", "bergen_2", "bergen_3", "bergen_4",
+              "stockholm_1", "stockholm_2",
+              "uppsala",
+              "gothenburg",
+              "lund_1", "lund_2", "lund_3",
+              "ku_1", "ku_2",
+              "aarhus", 
+              "helsinki_1", "helsinki_2", "helsinki_3", 
+              "aalto_1", "aalto_2"
 )
 
 
@@ -137,10 +151,10 @@ inst <- c(rep("ETH Zurich", 3),
           rep("Princeton University", 3),
           rep("University of Regensburg", 3),
           rep("University of Ulm", 2),
-          rep("Rensselaer Polytechnic Institute", 3), 
+          rep("Rensselaer Polytechnic Institute (RPI)", 3), 
           "RPTU Kaiserslautern-Landau",
           rep("Arizona State University", 3),
-          rep("Berkeley, University of California", 2),
+          rep("University of California, Berkeley", 2),
           rep("University of Birmingham", 1),
           rep("University of British Columbia", 1),
           rep("Brown University", 2),
@@ -148,8 +162,8 @@ inst <- c(rep("ETH Zurich", 3),
           rep("California Institute of Technology", 3), 
           rep("University of Carleton", 1),
           rep("University of Chicago", 2),
-          rep("CMU, Carnegie Mellon University", 3),
-          rep("Columbia University", 1),
+          rep("Carnegie Mellon University (CMU)", 3),
+          rep("Columbia University", 3),
           rep("Concordia University", 4),
           rep("Cornell University", 3),
           rep("Dartmouth College", 3),
@@ -170,12 +184,12 @@ inst <- c(rep("ETH Zurich", 3),
           rep("University of Limerick", 2),
           rep("Manchester University", 2),
           rep("University of Manitoba", 2),
-          rep("McGill", 6),
-          rep("McMaster", 2),
+          rep("McGill University", 6),
+          rep("McMaster University", 2),
           rep("University of Michigan", 2),
           rep("Michigan State University", 1),
           rep("University of Minnesota Twin Cities", 2),
-          rep("MIT", 1),
+          rep("Massachusetts Institute of Technology (MIT)", 1),
           rep("Monash University", 2),
           rep("Memorial University of Newfoundland", 2),
           rep("Northwestern University", 2),
@@ -186,20 +200,20 @@ inst <- c(rep("ETH Zurich", 3),
           rep("University of Pittsburgh", 2),
           rep("University of Potsdam", 1),
           rep("Queen\u0027s University", 2),
-          rep("SFU", 1),
+          rep("Simon Fraser University", 1),
           rep("Stanford University", 3),
           rep("University of St Andrews", 2),
           rep("University of Toronto", 1),
-          rep("UCalgary", 4),
-          rep("UCLA, University of California, Los Angeles", 4),
-          rep("UCSD, UCSanDiego, University of California", 3),
+          rep("University of Calgary", 4),
+          rep("University of California, Los Angeles (UCLA)", 4),
+          rep("University of California, San Diego (UCSD)", 3),
           rep("University of Massachusetts Amherst", 3),
           rep("University of Goettingen", 3),
           rep("University of Heidelberg", 1),
           rep("University of Manchester", 1),
           rep("University of Stuttgart", 2),
-          rep("UPenn, University of Pennsylvania", 2),
-          rep("UVic", 2),
+          rep("University of Pennsylvania", 2),
+          rep("University of Victoria", 2),
           rep("University of Waterloo", 7),
           rep("Vanderbilt University", 3),
           rep("University of Waikato", 1),
@@ -207,7 +221,7 @@ inst <- c(rep("ETH Zurich", 3),
           rep("Yale University", 1),
           rep("Yeshiva University", 1),
           rep("York University", 2), 
-          # NEW after v0.1.0: 
+          # NEW in v0.2.0: 
           rep("University of Groningen", 2),
           "University of Lisbon",
           "Willamette University",
@@ -223,8 +237,23 @@ inst <- c(rep("ETH Zurich", 3),
           rep("University College Cork", 2),
           rep("Cardiff University", 2),
           rep("Aberystwyth University", 2),
-          "University College Dublin"
-)
+          "University College Dublin", 
+          # NEW after v0.2.0: 
+          rep("University of Stirling", 3),
+          rep("University of Magdeburg", 3),
+          "Martin Luther University Halle-Wittenberg",
+          rep("University of Bangor", 4),
+          "University of Oslo",
+          rep("University of Bergen", 4),
+          rep("University of Stockholm", 2),
+          "Uppsala University",
+          "University of Gothenburg",
+          rep("Lund University", 3),
+          rep("University of Copenhagen", 2),
+          "Aarhus University",
+          rep("University of Helsinki", 3),
+          rep("Aalto University", 2)
+) # inst.
 
 # Alternative name (e.g. in source language), abbreviation (e.g., in URL): 
 
@@ -246,43 +275,43 @@ inst_alt <- c(rep("Eidgen\u00F6ssische Technische Hochschule, Z\u00FCrich", 3),
               rep("Universit\u00E4t Ulm", 2),
               rep("RPI, Rensselaer", 3),
               "Rheinland-Pf\u00E4lzische Technische Universit\u00E4t Kaiserslautern-Landau",
-              rep("Arizona State University", 3),
-              rep("Berkeley, University of California", 2),
-              rep("University of Birmingham", 1),
-              rep("University of British Columbia", 1),
+              rep("Arizona State University / ASU", 3),
+              rep("UC Berkeley / UCBerkeley", 2),
+              rep("Birmingham University / UBirmingham", 1),
+              rep("University of British Columbia / UBC", 1),
               rep("Brown University", 2),
-              rep("Boston University", 1),
+              rep("Boston University / BU", 1),
               rep("Caltech", 3),
               rep("University of Carleton", 1),
               rep("Chicago University / UChicago", 2),
-              rep("CMU, Carnegie Mellon University", 3),
-              rep("Columbia University", 1),
-              rep("Concordia University", 4),
-              rep("Cornell University", 3),
-              rep("Dartmouth College", 3),
-              rep("Trinity College Dublin", 2),
-              rep("Duke University", 2),
-              rep("University of Dundee", 4),
-              rep("University of Edinburgh", 1),
-              rep("University of Florida", 3),
-              rep("University of Galway", 2),
-              rep("University of Glasgow", 2),
-              rep("University of Guelph", 1),
+              rep("Carnegie Mellon / CMU", 3),
+              rep("Columbia", 3),
+              rep("Concordia", 4),
+              rep("Cornell", 3),
+              rep("Dartmouth", 3),
+              rep("Trinity Dublin / TCD", 2),
+              rep("Duke", 2),
+              rep("Dundee University", 4),
+              rep("Edinburgh University", 1),
+              rep("Florida University", 3),
+              rep("Galway University", 2),
+              rep("Glasgow University", 2),
+              rep("Guelph University / U o Guelph", 1),
               rep("Harvard", 3),
-              rep("University of California, Irvine", 4),
-              rep("Johns Hopkins University, JHU", 5),
-              rep("University of Kassel", 1),
+              rep("UCIrvine / UCI Health / UCI", 4),
+              rep("Johns Hopkins / JHU", 5),
+              rep("Universit\u00E4t Kassel", 1),
               rep("Lancaster University", 2),
               rep("Universit\u00E9 Laval", 1),
-              rep("University of Limerick, UL", 2),
+              rep("Ollscoil Luimnigh / UL", 2),
               rep("Manchester University", 2),
               rep("University of Manitoba", 2),
-              rep("McGill University", 6),
-              rep("McMaster University", 2),
+              rep("McGill", 6),
+              rep("McMaster", 2),
               rep("University of Michigan", 2),
               rep("Michigan State University", 1),
               rep("University of Minnesota Twin Cities", 2),
-              rep("MIT, Massachusetts Institute of Technology", 1),
+              rep("Massachusetts Institute of Technology, MIT", 1),
               rep("Monash University", 2),
               rep("Memorial University of Newfoundland", 2),
               rep("Northwestern University", 2),
@@ -294,27 +323,27 @@ inst_alt <- c(rep("Eidgen\u00F6ssische Technische Hochschule, Z\u00FCrich", 3),
               rep("University of Potsdam", 1),
               rep("Queen\u0027s University", 2),
               rep("Simon Fraser University", 1),
-              rep("Stanford University", 3),
-              rep("University of St Andrews", 2),
-              rep("University of Toronto", 1),
-              rep("University of Calgary", 4),
-              rep("Los Angeles University, UC Los Angeles", 4),
-              rep("San Diego University, UC San Diego", 3),
+              rep("Stanford Uni / Uni Stanford", 3),
+              rep("St-Andrews / StAndrews", 2),
+              rep("Toronto University", 1),
+              rep("UCalgary, Calgary University", 4),
+              rep("UC Los Angeles, Los Angeles University", 4),
+              rep("UC San Diego, San Diego University", 3),
               rep("Amherst University, U of Massachusetts Amherst", 3),
               rep("Universit\u00E4t G\u00F6ttingen", 3),
               rep("Universit\u00E4t Heidelberg", 1),
               rep("University of Manchester", 1),
               rep("Universit\u00E4t Stuttgart", 2),
-              rep("UPenn, University of Pennsylvania", 2),
-              rep("Victoria", 2),
+              rep("UPenn, U of Pennsylvania", 2),
+              rep("Victoria / UVic", 2),
               rep("UWaterloo", 7),
               rep("Vanderbilt", 3),
               rep("Waikato", 1),
-              rep("Western University", 1),
+              rep("Western / UWO", 1),
               rep("Yale", 1),
               rep("YU", 1),
-              rep("Yorku", 2),
-              # NEW after v0.1.0: 
+              rep("YorkU, York", 2),
+              # NEW in v0.2.0: 
               rep("Rijksuniversiteit Groningen", 2),
               "Universidade de Lisboa",
               "Willamette",
@@ -330,8 +359,23 @@ inst_alt <- c(rep("Eidgen\u00F6ssische Technische Hochschule, Z\u00FCrich", 3),
               rep("Colaiste na hOllscoile Corcaigh / UCC", 2),
               rep("Prifysgol Caerdydd", 2),
               rep("Prifysgol Aberystwyth", 2),
-              "An Colaiste Ollscoile, Baile Atha Cliath / UCD"
-)
+              "An Colaiste Ollscoile, Baile Atha Cliath / UCD",
+              # NEW after v0.2.0: 
+              rep("Stirling University / UStirling", 3),
+              rep("Otto-von-Guericke-Universit\u00E4t Magdeburg / OVGU", 3),
+              "Martin-Luther-Universit\u00E4t Halle-Wittenberg / MLU Halle Wittenberg",
+              rep("Prifysgol Bangor / Bangor University", 4),
+              "Universitetet i Oslo / UiO",
+              rep("Universitetet i Bergen / UiB", 4),
+              rep("Stockholms universitet / SU", 2),
+              "Uppsala Universitet / UU",
+              "G\u00F6teborgs Universitet / GU",
+              rep("Lunds Universitet / LU", 3),
+              rep("Kobenhavns Universitet / KU", 2),
+              "Aarhus Universitet / AU",
+              rep("Helsingin Yliopisto / UH", 3),
+              rep("Aalto Yliopisto / AU", 2)
+) # inst_alt. 
 
 # Valid URL: 
 
@@ -355,7 +399,7 @@ url <- c(rep("https://ethz.ch/de.html", 3),
          "https://rptu.de",
          rep("https://www.asu.edu", 3),
          rep("https://www.berkeley.edu", 2),
-         rep("https://www.birmingham.ac.uk/index.aspx", 1),
+         rep("https://www.birmingham.ac.uk/", 1),
          rep("https://www.ubc.ca", 1),
          rep("https://www.brown.edu", 2),
          rep("https://www.bu.edu", 1),
@@ -363,7 +407,7 @@ url <- c(rep("https://ethz.ch/de.html", 3),
          rep("https://carleton.ca", 1),
          rep("https://www.uchicago.edu", 2),
          rep("https://www.cmu.edu", 3),
-         rep("http://www.columbia.edu", 1),
+         rep("https://www.columbia.edu", 3),
          rep("https://www.concordia.ca", 4),
          rep("https://www.cornell.edu", 3),
          rep("https://home.dartmouth.edu", 3),
@@ -398,7 +442,7 @@ url <- c(rep("https://ethz.ch/de.html", 3),
          rep("https://www.uottawa.ca/en", 1),
          rep("https://www.ox.ac.uk", 8),
          rep("https://www.pitt.edu", 2),
-         rep("https://www.uni-potsdam.de/de/", 1),
+         rep("https://www.uni-potsdam.de/de", 1),
          rep("https://www.queensu.ca", 2),
          rep("https://www.sfu.ca", 1),
          rep("https://www.stanford.edu", 3),
@@ -421,7 +465,7 @@ url <- c(rep("https://ethz.ch/de.html", 3),
          rep("https://www.yale.edu", 1),
          rep("https://www.yu.edu", 1),
          rep("https://www.yorku.ca", 2),
-         # NEW after v0.1.0: 
+         # NEW in v0.2.0: 
          rep("https://www.rug.nl", 2),
          "https://www.ulisboa.pt",
          "https://willamette.edu",
@@ -437,16 +481,30 @@ url <- c(rep("https://ethz.ch/de.html", 3),
          rep("https://www.ucc.ie", 2),
          rep("https://www.cardiff.ac.uk", 2),
          rep("https://aber.ac.uk/en/", 2),
-         "https://www.ucd.ie"
-)
+         "https://www.ucd.ie",
+         # NEW after v0.2.0: 
+         rep("https://www.stir.ac.uk", 3),
+         rep("https://www.ovgu.de", 3),
+         "https://www.uni-halle.de",
+         rep("https://www.bangor.ac.uk", 4),
+         "https://www.uio.no",
+         rep("https://www.uib.no", 4),
+         rep("https://www.su.se", 2),
+         "https://www.uu.se",
+         "https://www.gu.se", 
+         rep("https://www.lu.se", 3),
+         rep("https://www.ku.dk", 2),
+         "https://www.au.dk",
+         rep("https://www.helsinki.fi", 3),
+         rep("https://www.aalto.fi/fi", 2)
+) # url.
 
 
-
-# Collect all_data (as data frame): ------
+# B. Collect all_data (as data frame): ------ 
 
 all_data <- data.frame(inst = inst, inst_alt = inst_alt, url = url, pal = uni_pals)
 # dim(all_data)  # 202 4  2023-08-16
-# dim(all_data)  # 236 4  2023-09-14
+# dim(all_data)  # 269 4  2023-10-14
 
 # Sort df by inst & pal: 
 all_data <- all_data[order(all_data$inst, all_data$pal), ]
@@ -455,23 +513,25 @@ all_data <- all_data[order(all_data$inst, all_data$pal), ]
 row.names(all_data) <- 1:nrow(all_data)
 
 
-# # Getting pal from pal names: ---- 
+# - Getting pal from pal names: ---- 
 
-# # eval(str2expression(all_data$pal[1]))
-# # eval(str2lang(all_data$pal[1]))
-
-# # IFF pals are loaded:
-# # +++ here now +++
-# 
-# all_pals <- all_data$pal
-# 
-# # Number of colors (from pal names):
+# eval(str2expression(all_data$pal[1]))
+# eval(str2lang(all_data$pal[1]))
 # 
 # # 3 ways of evaluating an object by its name:
 # pal_name <- all_pals[1]
 # length(eval(parse(text = pal_name)))
 # length(eval(str2expression(pal_name)))
 # length(eval(str2lang(pal_name)))
+
+
+# - Descriptive stats: ----
+
+# # IFF pals are loaded:
+# 
+# all_pals <- all_data$pal
+# 
+# # Number of colors (from pal names):
 # 
 # # Number of pals and colors:
 # n_pals <- length(all_pals)
@@ -487,18 +547,18 @@ row.names(all_data) <- 1:nrow(all_data)
 # 
 # n_cols
 # 
-# # Descriptive stats: ----
 # 
 # all_data$pal[duplicated(all_data$pal)]  # duplicates?
 # 
-# # On 2023-09-14:
-# length(all_data$pal)           #  236 color palettes
-# length(unique(all_data$inst))  #  102 institutions
-# sum(n_cols)                    # 1580 colors
+# # On 2023-10-14:
+# length(all_data$pal)           #  269 color palettes
+# length(unique(all_data$inst))  #  116 institutions
+# sum(n_cols)                    # 1850 colors
+
+# +++ here now +++
 
 
-
-# Export as unicol_data (as data frame): ------
+# C. Export as unicol_data (as data frame): ------ 
 
 #' The color palettes of the \strong{unicol} package
 #' 
@@ -532,11 +592,13 @@ unicol_data <- all_data
 
 # # Check:
 # unicol_data
+# names(unicol_data)
 
 
 
 ## ToDo: --------
 
+# Process unicol_data further, e.g., 
 # - add a country field (or get/read from URL)?
 # - add a variable for number of colors (length)
 

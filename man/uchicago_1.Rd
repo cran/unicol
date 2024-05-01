@@ -9,7 +9,7 @@ An object of class \code{character} of length 4.
 }
 \source{
 Color definitions are based on \href{https://www.uchicago.edu}{UChicago}'s 
-\href{https://creative.uchicago.edu/resources/}{Brand Identity Guidelines}.
+\href{https://creative.uchicago.edu/brand-resources/}{Brand Identity Guidelines}.
 }
 \usage{
 uchicago_1
@@ -35,7 +35,7 @@ The primary color palette should be used in all digital and print communications
 Within the primary palette itself, \code{"maroon"} should always be the dominant color, with Greys used as accents.
 
 For specific color ratios and layout examples, see the 
-\href{https://creative.uchicago.edu/resources/}{Brand Identity Guidelines}. 
+\href{https://creative.uchicago.edu/brand-resources/}{Brand Identity Guidelines}. 
 
 Always use these colors at 100 percent. Tints should never be used.
 }
@@ -53,16 +53,6 @@ unikn::seecol(uchicago_1, main = "Primary colors Chicago Uni") # view color pale
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -74,7 +64,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -92,7 +87,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -120,13 +115,20 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

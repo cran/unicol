@@ -22,11 +22,11 @@ downloads](https://cranlogs.r-pkg.org/badges/grand-total/unicol)](https://www.r-
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8252106.svg)](https://doi.org/10.5281/zenodo.8252106) -->
 <!-- ALL badges end. -->
 
-# unicol 0.2.0 <img src = "man/figures/logo.png" align = "right" alt = "unicol::" width = "160px" alt="" />
+# unicol 0.3.0 <img src = "man/figures/logo.png" align = "right" alt = "unicol::" width = "150px" alt="" />
 
 <!-- unicol pkg logo and link: -->
 <!-- <a href = "https://CRAN.R-project.org/package=unicol"> -->
-<!-- <img src = "./man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/> -->
+<!-- <img src = "./man/figures/logo.png" alt = "unicol::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/> -->
 <!-- </a> -->
 <!-- Slogan: -->
 
@@ -86,12 +86,12 @@ library(unikn)   # for color functions
 
 ## Contents
 
-The **unicol** package currently provides **236 color palettes** from
-**102 institutions**.
+The **unicol** package currently provides **269 color palettes** from
+**116 institutions**.
 
 <!-- **Table\ 1** provides an overview of all color palettes:  -->
 
-(See the vignette on **[Color
+(See the vignette **[All color
 palettes](https://hneth.github.io/unicol/articles/color_pals.html)** for
 an overview of included color palettes and institutions.)
 
@@ -100,23 +100,24 @@ an overview of included color palettes and institutions.)
 
 ### Examples of color palettes
 
-<!-- The **unicol** package currently contains **236\ color palettes** from **102\ institutions**.  -->
+<!-- The **unicol** package currently contains **269\ color palettes** from **116\ institutions**.  -->
 <!-- Example 1: Random pals (from vignette color_pals.Rmd): -->
 <!-- Show as a table: -->
 <!-- Show as a figure: -->
 
-**Figure 1** illustrates 50 random color palettes (with 242 colors):
+**Figure 1** illustrates 50 random color palettes (with 202 colors):
 
 <div class="figure" style="text-align: center">
 
-<img src="man/figures/README-unicol-pals-example-1-figure-1.png" alt="Figure 1: A sample of 50 unicol palettes (containing 242 colors)." width="600px" />
+<img src="man/figures/README-unicol-pals-example-1-figure-1.png" alt="Figure 1: A sample of 50 unicol palettes (containing 202 colors)." width="680px" />
 <p class="caption">
-Figure 1: A sample of 50 unicol palettes (containing 242 colors).
+Figure 1: A sample of 50 unicol palettes (containing 202 colors).
 </p>
 
 </div>
 
 <!-- ![Examples of 50 color palettes included in **unicol**.](./man/figures/README-unicol-pals-example-1-figure-1.png) -->
+<!-- Example 2:  Insights into clusters / relations / similar sets -->
 
 ### Using color palettes
 
@@ -185,8 +186,8 @@ For instructions on how this can be done, please see the documentation
 of the `newpal()` function (of the
 **[unikn](https://CRAN.R-project.org/package=unikn)** package). The
 vignette on [Institutional
-colors](https://hneth.github.io/unikn/articles/color_inst.html) provides
-a corresponding example.
+colors](https://hneth.github.io/unikn/articles/inst_colors.html)
+provides a corresponding example.
 
 **Call for contributions: Collecting color palettes**
 
@@ -202,7 +203,7 @@ following information:
 <!-- ToDo: -->
 
 <a href = "https://github.com/hneth/unicol/issues/30">
-<img src = "./man/figures/todo.png" alt = "unicol::todo" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
+<img src = "./man/figures/todo.png" alt = "unicol::todo" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/>
 </a>
 
 1.  your code (e.g., the `newpal()` command creating your color
@@ -245,7 +246,7 @@ following course:
 - **Open Source Software Development in R** (ADILT applications,
   PSY-18040), at the **[University of
   Konstanz](https://www.uni-konstanz.de/en/)**  
-  <!-- * Spring/Summer\ 2023: **Tuesdays**, **13:30—15:00**; in **C426**  -->
+- Spring/Summer 2023: **Tuesdays**, **13:30—15:00**; in **C426**
 - By **[Hansjörg Neth](https://neth.de/)** (<h.neth@uni.kn>,
   [SPDS](https://www.spds.uni-konstanz.de/), [University of
   Konstanz](https://www.uni-konstanz.de/en/))
@@ -283,7 +284,7 @@ functionality from it.
 <!-- unicol pkg logo and link: -->
 
 <a href = "https://CRAN.R-project.org/package=unicol">
-<img src = "./man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
+<img src = "./man/figures/logo.png" alt = "unicol::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/>
 </a>
 
 To support our efforts, please cite the **unicol** package in your
@@ -291,10 +292,10 @@ derivations or publications:
 
 <!-- Citation / reference (in APA format): -->
 
-- Neth, H. et al. (2023). unicol: The colors of your university.  
+- Neth, H. et al. (2024). unicol: The colors of your university.  
   Social Psychology and Decision Sciences, University of Konstanz,
   Germany.  
-  Computer software (R package version 0.2.0, September 15, 2023).  
+  Computer software (R package version 0.3.0, May 1, 2024).  
   Retrieved from <https://CRAN.R-project.org/package=unicol>.  
   doi [10.5281/zenodo.8252106](https://doi.org/10.5281/zenodo.8252106)
 
@@ -305,10 +306,10 @@ A BibTeX entry for LaTeX users is:
     @Manual{,
       title = {unicol: The colors of your university},
       author = {Hansjoerg Neth and Constantin Basler and Paula Bauer and Kaethe Bodenstein and Franziska Drechsel and Gina-Loretta Franz and Karolin Heiss and Julia Koenig and Isabelle Krist and Larissa Schwab and Alina Sohst and Isabel Staatz and Lisa Trueb},
-      year = {2023},
+      year = {2024},
       organization = {Social Psychology and Decision Sciences, University of Konstanz},
       address = {Konstanz, Germany},
-      note = {R package (version 0.2.0, September 15, 2023)},
+      note = {R package (version 0.3.0, May 1, 2024)},
       url = {https://CRAN.R-project.org/package=unicol},
       doi = {10.5281/zenodo.8252106},
     }
@@ -325,6 +326,6 @@ creators.
 
 <!-- Footer: -->
 
-\[File `README.Rmd` updated on 2023-09-15.\]
+\[File `README.Rmd` updated on 2024-05-01.\]
 
 <!-- eof. -->

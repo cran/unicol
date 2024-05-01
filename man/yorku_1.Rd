@@ -8,8 +8,8 @@
 An object of class \code{character} of length 3.
 }
 \source{
-Color definitions are based on the
-\href{https://www.yorku.ca/brand/wp-content/uploads/sites/18/2021/07/YORKU_Brand_Standards_July2021.pdf}{York Brand Standards (PDF)}.
+Color definitions are based on \href{https://www.yorku.ca}{York}'s 
+\href{https://www.yorku.ca/brand/}{Brand standards} (PDF).
 }
 \usage{
 yorku_1
@@ -19,11 +19,11 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{yorku_1} provides the three primary colors 
-of the \href{https://www.yorku.ca/}{York University}, Canada.
+of the \href{https://www.yorku.ca}{York University}, Canada.
 }
 \details{
 The 3 primary colors are
-\code{"york_red"} (defined as RGB 227/24/55, HEX #E31837),
+\code{"York red"} (defined as RGB 227/24/55, HEX #E31837),
 \code{"white"} (defined as RGB 255/255/255, HEX #FFFFFF), and
 \code{"black"} (defined as RGB 0/0/0, HEX #000000).
 
@@ -31,7 +31,8 @@ The 3 primary colors are
 }
 \examples{
 yorku_1
-unikn::seecol(yorku_1, main = "Primary colors of York University") # view color palette
+unikn::seecol(yorku_1, col_bg = "grey90", 
+              main = "The primary colors of York University, CA") # view palette
 
 }
 \seealso{
@@ -43,10 +44,10 @@ unikn::seecol(yorku_1, main = "Primary colors of York University") # view color 
 
 Other Canadian university color palettes: 
 \code{\link{carleton}},
-\code{\link{conc_1}},
-\code{\link{conc_2}},
-\code{\link{conc_3}},
-\code{\link{conc_4}},
+\code{\link{concordia_1}},
+\code{\link{concordia_2}},
+\code{\link{concordia_3}},
+\code{\link{concordia_4}},
 \code{\link{guelph}},
 \code{\link{laval}},
 \code{\link{manitoba_1}},
@@ -64,15 +65,15 @@ Other Canadian university color palettes:
 \code{\link{queensu_1}},
 \code{\link{queensu_2}},
 \code{\link{sfu_brand}},
-\code{\link{ubc_1}},
+\code{\link{ubc}},
 \code{\link{ucalgary_1}},
 \code{\link{ucalgary_2}},
 \code{\link{ucalgary_accent}},
 \code{\link{ucalgary_warmgreys}},
 \code{\link{uottawa}},
 \code{\link{utoronto}},
-\code{\link{uvic_complementary}},
-\code{\link{uvic_core}},
+\code{\link{uvic_1}},
+\code{\link{uvic_2}},
 \code{\link{uwaterloo_arts}},
 \code{\link{uwaterloo_engineering}},
 \code{\link{uwaterloo_environment}},

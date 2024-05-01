@@ -8,8 +8,8 @@
 An object of class \code{character} of length 5.
 }
 \source{
-Colour definitions are based on 
-\href{https://www.universityofgalway.ie/media/brand/11901_University_of_Galway_Brand_Guidelines_v13.pdf}{UGalway's brand guidelines} (PDF).
+Colour definitions are based on \href{https://www.universityofgalway.ie}{UGalway}'s 
+\href{https://www.universityofgalway.ie/media/brand/11901_University_of_Galway_Brand_Guidelines_v13.pdf}{brand guidelines} (PDF).
 }
 \usage{
 galway_1
@@ -18,7 +18,7 @@ galway_1
 A names vector of colors (HEX/HTML codes of type character).
 }
 \description{
-\code{galway_1} provides the 5 primary colors
+\code{galway_1} provides the five primary colors
 of the \href{https://www.universityofgalway.ie}{University of Galway}, Ireland.
 }
 \details{
@@ -33,7 +33,8 @@ The 5 primary colors are
 }
 \examples{
 galway_1
-unikn::seecol(galway_1, main = "University of Galway 1", col_bg = "lightgrey") # view palette
+unikn::seecol(galway_1, col_bg = "grey90", 
+              main = "Primary colors of the University of Galway")  # view palette
 
 }
 \seealso{
@@ -45,15 +46,15 @@ unikn::seecol(galway_1, main = "University of Galway 1", col_bg = "lightgrey") #
 \code{\link{grepal}} for finding named colors.
 
 Other Irish university color palettes: 
-\code{\link{UCC_1}},
-\code{\link{UCC_2}},
-\code{\link{UCD}},
 \code{\link{galway_2}},
 \code{\link{limerick_1}},
 \code{\link{limerick_2}},
 \code{\link{maynooth}},
 \code{\link{trinity_1}},
-\code{\link{trinity_2}}
+\code{\link{trinity_2}},
+\code{\link{ucc_1}},
+\code{\link{ucc_2}},
+\code{\link{ucd}}
 }
 \author{
 \strong{unicol}, 2023-07-16.

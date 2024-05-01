@@ -23,6 +23,9 @@ knitr::opts_chunk$set(collapse = FALSE,
 url_unicol_cran   <- "https://CRAN.R-project.org/package=unicol"
 url_unicol_github <- "https://github.com/hneth/unicol"
 
+url_github_doc_rel <- "https://hneth.github.io/unicol/"      # release version  
+url_github_doc_dev <- "https://hneth.github.io/unicol/dev/"  # dev version
+
 # unikn / Uni Konstanz:
 url_unikn <- "https://www.uni-konstanz.de"
 
@@ -73,7 +76,7 @@ par(opar)  # re-store original user settings
 ## ----use-pal-ggplot2, eval = TRUE, fig.width = 6, fig.asp = .65, out.width = "550px"----
 # 0. Create some data to plot: ---- 
 
-# Example based on https://www.r-graph-gallery.com/137-spring-shapes-data-art/
+# Example based on https://r-graph-gallery.com/137-spring-shapes-data-art/
 n <- 50
 groups <- 1:n
 df <- data.frame()

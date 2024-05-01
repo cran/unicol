@@ -8,7 +8,7 @@
 An object of class \code{character} of length 15.
 }
 \source{
-Color definitions are based on the
+Color definitions are based on \href{https://www.stanford.edu}{Stanford}'s 
 \href{https://identity.stanford.edu/design-elements/color/}{Color manual}.
 }
 \usage{
@@ -19,35 +19,39 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{stanford_1} provides the 15 primary colors
-of the \href{https://www.stanford.edu/}{Stanford University}, USA.
+of \href{https://www.stanford.edu/}{Stanford University}, CA, USA.
 }
 \details{
-Primary color palette consists of Cardinal red, white, black and cool grey.
-The layouts lean heavily on these colors, which are
-\code{"cardinal_red"} (defined as HEX #8C1515),
-\code{"cardinal_red_light"} (defined as HEX #B83A4B),
-\code{"cardinal_red_dark"} (defined as HEX #820000),
+\href{https://www.stanford.edu/}{UStanford}'s 
+primary color palette consists of 
+\code{Cardinal red}, \code{white}, \code{black}, and \code{cool grey}.
+
+The layouts lean heavily on these colors, which are 
+\code{"Cardinal red"} (defined as HEX #8C1515),
+\code{"Cardinal red light"} (defined as HEX #B83A4B),
+\code{"Cardinal red dark"} (defined as HEX #820000),
 \code{"white"} (defined as HEX #FFFFFF),
 \code{"black"} (defined as HEX #2E2D29),
-\code{"black_90"} (defined as HEX #43423E),
-\code{"black_80"} (defined as HEX #585754),
-\code{"black_70"} (defined as HEX #6D6C69),
-\code{"black_60"} (defined as HEX #767674),
-\code{"black_50"} (defined as HEX #979694),
-\code{"black_40"} (defined as HEX #ABABA9),
-\code{"black_30"} (defined as HEX #C0C0BF),
-\code{"black_20"} (defined as HEX #D5D5D4),
-\code{"black_10"} (defined as HEX #EAEAEA) and 
-\code{"cool_grey"} (defined as HEX #53565A).
+\code{"black 90"} (defined as HEX #43423E),
+\code{"black 80"} (defined as HEX #585754),
+\code{"black 70"} (defined as HEX #6D6C69),
+\code{"black 60"} (defined as HEX #767674),
+\code{"black 50"} (defined as HEX #979694),
+\code{"black 40"} (defined as HEX #ABABA9),
+\code{"black 30"} (defined as HEX #C0C0BF),
+\code{"black 20"} (defined as HEX #D5D5D4),
+\code{"black 10"} (defined as HEX #EAEAEA), and 
+\code{"cool grey"} (defined as HEX #53565A).
 }
 \examples{
 stanford_1
-unikn::seecol(stanford_1, main = "Primary colors Stanford Uni") # view color palette
+unikn::seecol(stanford_1, col_bg = "grey96",  
+              main = "The primary colors of Stanford University")  # view color palette
 
 }
 \seealso{
-\code{\link{stanford_2_accent}} for secondary, accent colors of Stanford University;
-\code{\link{stanford_3_web}} for web colors of Stanford University;
+\code{\link{stanford_2}} for secondary, accent colors of Stanford University;
+\code{\link{stanford_3}} for web colors of Stanford University;
 \code{\link{seecol}} for viewing and comparing color palettes;
 \code{\link{usecol}} for using color palettes;
 \code{\link{simcol}} for finding similar colors;
@@ -55,16 +59,6 @@ unikn::seecol(stanford_1, main = "Primary colors Stanford Uni") # view color pal
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -76,7 +70,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -94,7 +93,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -121,14 +120,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_1}},
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

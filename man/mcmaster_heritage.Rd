@@ -8,8 +8,8 @@
 An object of class \code{character} of length 3.
 }
 \source{
-Colour definitions are based on the
-\href{https://brand.mcmaster.ca/app/uploads/2019/04/digital-guidelines.pdf}{Digital Brand Standards Manual}.
+Colour definitions are based on \href{https://www.mcmaster.ca}{McMaster}'s 
+\href{https://brand.mcmaster.ca/app/uploads/2019/04/digital-guidelines.pdf}{Digital brand manual} (PDF).
 }
 \usage{
 mcmaster_heritage
@@ -19,21 +19,24 @@ A named vector of colours (HEX/HTML codes of type character).
 }
 \description{
 \code{mcmaster_heritage} provides the three heritage colours 
-of \href{https://www.mcmaster.ca/}{McMaster University}, Canada. 
-The heritage colours are used in association with all McMaster materials.
+of \href{https://www.mcmaster.ca}{McMaster University}, Canada.
 }
 \details{
+The heritage colours are
+\code{"McMaster heritage maroon"} (defined as HEX #7A003C),
+\code{"McMaster heritage gold"} (defined as HEX #FDBF57), and
+\code{"McMaster heritage grey"} (defined as HEX #5E6A71).
+
+
+The heritage colours are used in association with all 
+\href{https://www.mcmaster.ca}{McMaster} materials.
+
 Strengthen the McMaster brand by consistently using the McMaster colour palette 
 across all digital communications. The rich hues suggest tradition and solidity. 
 These colours are all reflected in the McMaster logo, an essential element of our brand identity. 
-McMaster Heritage Maroon is a key brand colour. 
+\code{McMaster heritage maroon} is a key brand colour. 
 Continue to use this Heritage colour for all digital applications where appropriate. 
 The Brighter World colours are to be used in all brand communications in addition to the Heritage colours.
-
-The heritage colours are
-\code{"mcmaster_heritage_maroon"} (defined as HEX #7A003C),
-\code{"mcmaster_heritage_gold"} (defined as HEX #FDBF57), and
-\code{"mcmaster_heritage_grey"} (defined as HEX #5E6A71).
 }
 \examples{
 mcmaster_heritage
@@ -50,10 +53,10 @@ unikn::seecol(mcmaster_heritage, main = "McMaster Heritage Colours") # view colo
 
 Other Canadian university color palettes: 
 \code{\link{carleton}},
-\code{\link{conc_1}},
-\code{\link{conc_2}},
-\code{\link{conc_3}},
-\code{\link{conc_4}},
+\code{\link{concordia_1}},
+\code{\link{concordia_2}},
+\code{\link{concordia_3}},
+\code{\link{concordia_4}},
 \code{\link{guelph}},
 \code{\link{laval}},
 \code{\link{manitoba_1}},
@@ -70,15 +73,15 @@ Other Canadian university color palettes:
 \code{\link{queensu_1}},
 \code{\link{queensu_2}},
 \code{\link{sfu_brand}},
-\code{\link{ubc_1}},
+\code{\link{ubc}},
 \code{\link{ucalgary_1}},
 \code{\link{ucalgary_2}},
 \code{\link{ucalgary_accent}},
 \code{\link{ucalgary_warmgreys}},
 \code{\link{uottawa}},
 \code{\link{utoronto}},
-\code{\link{uvic_complementary}},
-\code{\link{uvic_core}},
+\code{\link{uvic_1}},
+\code{\link{uvic_2}},
 \code{\link{uwaterloo_arts}},
 \code{\link{uwaterloo_engineering}},
 \code{\link{uwaterloo_environment}},

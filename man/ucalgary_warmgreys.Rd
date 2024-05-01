@@ -8,8 +8,8 @@
 An object of class \code{character} of length 2.
 }
 \source{
-Colour definitions are based on UCalgary's 
-\href{https://www.ucalgary.ca/sites/default/files/teams/12/3.0-eyes-high-dec2018.pdf}{Visual Identity Standards}.
+Colour definitions are based on \href{https://www.ucalgary.ca}{UCalgary}'s  
+\href{https://www.ucalgary.ca/sites/default/files/teams/12/3.0-eyes-high-dec2018.pdf}{Visual identity standards} (PDF).
 }
 \usage{
 ucalgary_warmgreys
@@ -19,7 +19,7 @@ A named vector of colours (HEX/HTML codes of type character).
 }
 \description{
 \code{ucalgary_warmgreys} provides the warm greys 
-of \href{https://www.ucalgary.ca/}{University of Calgary}, Canada.
+of the \href{https://www.ucalgary.ca}{University of Calgary}, Canada.
 }
 \details{
 The colours are
@@ -43,10 +43,10 @@ unikn::seecol(ucalgary_warmgreys, main = "Warm greys UCalgary") # view colour pa
 
 Other Canadian university color palettes: 
 \code{\link{carleton}},
-\code{\link{conc_1}},
-\code{\link{conc_2}},
-\code{\link{conc_3}},
-\code{\link{conc_4}},
+\code{\link{concordia_1}},
+\code{\link{concordia_2}},
+\code{\link{concordia_3}},
+\code{\link{concordia_4}},
 \code{\link{guelph}},
 \code{\link{laval}},
 \code{\link{manitoba_1}},
@@ -64,14 +64,14 @@ Other Canadian university color palettes:
 \code{\link{queensu_1}},
 \code{\link{queensu_2}},
 \code{\link{sfu_brand}},
-\code{\link{ubc_1}},
+\code{\link{ubc}},
 \code{\link{ucalgary_1}},
 \code{\link{ucalgary_2}},
 \code{\link{ucalgary_accent}},
 \code{\link{uottawa}},
 \code{\link{utoronto}},
-\code{\link{uvic_complementary}},
-\code{\link{uvic_core}},
+\code{\link{uvic_1}},
+\code{\link{uvic_2}},
 \code{\link{uwaterloo_arts}},
 \code{\link{uwaterloo_engineering}},
 \code{\link{uwaterloo_environment}},

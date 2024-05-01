@@ -8,8 +8,8 @@
 An object of class \code{character} of length 8.
 }
 \source{
-Color definitions are based on the
-\href{https://www.yorku.ca/brand/wp-content/uploads/sites/18/2021/07/YORKU_Brand_Standards_July2021.pdf}{York Brand Standards (PDF)}.
+Color definitions are based on \href{https://www.yorku.ca}{York}'s 
+\href{https://www.yorku.ca/brand/}{Brand standards} (PDF).
 }
 \usage{
 yorku_2
@@ -19,24 +19,24 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{yorku_2} provides eight secondary colors 
-of the \href{https://www.yorku.ca/}{York University}, Canada.
+of the \href{https://www.yorku.ca}{York University}, Canada.
 }
 \details{
 The 8 secondary colors are: 
-\code{"york_red_medium"}  (defined as RGB 175/13/26,   HEX #AF0D1A),
-\code{"york_red_dark"}    (defined as RGB 129/0/1,     HEX #810001),
-\code{"york_bright_blue"} (defined as RGB 58/194/239,  HEX #3AC2EF),
-\code{"york_light_blue"}  (defined as RGB 172/230/248, HEX #ACE6F8),
-\code{"york_light_grey"}  (defined as RGB 225/223/220, HEX #E1DFDC),
-\code{"york_pewter"}      (defined as RGB 214/207/202, HEX #D6CFCA),
-\code{"york_grey_medium"} (defined as RGB 183/174/169, HEX #B7AEA9), and
-\code{"york_grey_dark"}   (defined as RGB 104/98/96,   HEX #686260).
+\code{"York red medium"}  (defined as RGB 175/13/26,   HEX #AF0D1A),
+\code{"York red dark"}    (defined as RGB 129/0/1,     HEX #810001),
+\code{"York bright blue"} (defined as RGB 58/194/239,  HEX #3AC2EF),
+\code{"York light blue"}  (defined as RGB 172/230/248, HEX #ACE6F8),
+\code{"York light grey"}  (defined as RGB 225/223/220, HEX #E1DFDC),
+\code{"York pewter"}      (defined as RGB 214/207/202, HEX #D6CFCA),
+\code{"York grey medium"} (defined as RGB 183/174/169, HEX #B7AEA9), and
+\code{"York grey dark"}   (defined as RGB 104/98/96,   HEX #686260).
 
 \code{yorku_2} uses the HEX color definitions.
 }
 \examples{
 yorku_2
-unikn::seecol(yorku_2, main = "York University 2") # view color palette
+unikn::seecol(yorku_2, main = "Secondary colors of York University, CA")  # view palette
 
 }
 \seealso{
@@ -48,10 +48,10 @@ unikn::seecol(yorku_2, main = "York University 2") # view color palette
 
 Other Canadian university color palettes: 
 \code{\link{carleton}},
-\code{\link{conc_1}},
-\code{\link{conc_2}},
-\code{\link{conc_3}},
-\code{\link{conc_4}},
+\code{\link{concordia_1}},
+\code{\link{concordia_2}},
+\code{\link{concordia_3}},
+\code{\link{concordia_4}},
 \code{\link{guelph}},
 \code{\link{laval}},
 \code{\link{manitoba_1}},
@@ -69,15 +69,15 @@ Other Canadian university color palettes:
 \code{\link{queensu_1}},
 \code{\link{queensu_2}},
 \code{\link{sfu_brand}},
-\code{\link{ubc_1}},
+\code{\link{ubc}},
 \code{\link{ucalgary_1}},
 \code{\link{ucalgary_2}},
 \code{\link{ucalgary_accent}},
 \code{\link{ucalgary_warmgreys}},
 \code{\link{uottawa}},
 \code{\link{utoronto}},
-\code{\link{uvic_complementary}},
-\code{\link{uvic_core}},
+\code{\link{uvic_1}},
+\code{\link{uvic_2}},
 \code{\link{uwaterloo_arts}},
 \code{\link{uwaterloo_engineering}},
 \code{\link{uwaterloo_environment}},

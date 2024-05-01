@@ -8,8 +8,8 @@
 An object of class \code{character} of length 8.
 }
 \source{
-Color definitions are based on the
-\href{https://identityguide.hms.harvard.edu/color/}{Color manual}.
+Color definitions are based on \href{https://www.harvard.edu}{Harvard}'s 
+\href{https://identityguide.hms.harvard.edu/brand-design/colors}{Color manual}.
 }
 \usage{
 harvard_3
@@ -19,14 +19,12 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{harvard_3} provides the 8 web colors
-of the \href{https://www.harvard.edu/}{Harvard University}, USA.
+of \href{https://www.harvard.edu}{Harvard University}, USA.
 }
 \details{
-Additional web colors have been provided to allow for highlighting or accenting key information.
-In general, tertiary colors should be used sparingly so they do not to overwhelm the primary and secondary palettes.
 These colors are
 \code{"indigo"} (defined as RGB 41/51/82, HEX #293352),
-\code{"blue_bonnet"} (defined as RGB 78/132/196, HEX #4E84C4),
+\code{"blue bonnet"} (defined as RGB 78/132/196, HEX #4E84C4),
 \code{"ivy"} (defined as RGB 82/133/76, HEX #52854C),
 \code{"pear"} (defined as RGB 195/215/164, HEX #C3D7A4),
 \code{"lemon"} (defined as RGB 255/219/109 , HEX #FFDB6D),
@@ -34,12 +32,18 @@ These colors are
 \code{"gold"} (defined as RGB 196/150/26 , HEX #C4961A), and
 \code{"creme"} (defined as RGB 244/237/202, HEX #F4EDCA).
 
-For \code{"saffron"} the RGB and HEX definitions differ numerically.
-Our color palette is based on the HEX definition.
+
+Additional web colors have been provided to allow for 
+highlighting or accenting key information.
+
+In general, tertiary colors should be used sparingly so they do not to overwhelm the primary and secondary palettes.
+
+For \code{"saffron"} the RGB and HEX definitions differ numerically. 
+\code{harvard_3} uses the HEX color definitions.
 }
 \examples{
 harvard_3
-unikn::seecol(harvard_3, main = "Web colors Harvard University") # view color palette
+unikn::seecol(harvard_3, main = "Web colors of Harvard University")  # view palette
 
 }
 \seealso{
@@ -52,16 +56,6 @@ unikn::seecol(harvard_3, main = "Web colors Harvard University") # view color pa
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -73,7 +67,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -90,7 +89,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -118,14 +117,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

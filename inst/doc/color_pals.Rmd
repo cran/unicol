@@ -1,16 +1,13 @@
 ---
-title: "Color palettes"
+title: "All color palettes"
 author: "Hansjoerg Neth"
 date: "`r Sys.Date()`"
 output: 
-  rmarkdown::html_vignette: 
-    fig_caption: yes
+  rmarkdown::html_vignette
 vignette: > 
-  %\VignetteIndexEntry{Color palettes}
-  %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{All color palettes}
   %\VignetteEngine{knitr::rmarkdown}
-editor_options: 
-  chunk_output_type: console
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include = FALSE}
@@ -38,6 +35,9 @@ knitr::opts_chunk$set(collapse = FALSE,
 url_unicol_cran   <- "https://CRAN.R-project.org/package=unicol"
 url_unicol_github <- "https://github.com/hneth/unicol"
 
+url_github_doc_rel <- "https://hneth.github.io/unicol/"      # release version  
+url_github_doc_dev <- "https://hneth.github.io/unicol/dev/"  # dev version
+
 # unikn / Uni Konstanz:
 url_unikn <- "https://www.uni-konstanz.de"
 
@@ -57,14 +57,16 @@ url_unikn_github <- "https://github.com/hneth/unikn"
 <!-- </a> -->
 
 <!-- unicol pkg logo and link: -->
+
 <a href = "`r url_unicol_cran`">
-<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
+<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/>
 </a>
 
-This vignettes provides an overview of the **color palettes** provided by the **unicol** package. 
-(See the vignette on [Using color palettes](using_pals.html) for how to use the **unicol** color palettes.) 
 
-We install or load the **unicol** package to get started: 
+This vignettes provides an overview of the **color palettes** provided by the **unicol** package. 
+(See the [Using color palettes](using_pals.html) vignette for information on how to use the **unicol** color palettes.) 
+
+We install and load the **unicol** package to get started: 
 
 ```{r load-unicol-pkg, message = FALSE, warning = FALSE}
 # install.packages('unicol')  # install unicol from CRAN client
@@ -72,14 +74,78 @@ library('unicol')             # load the package
 ```
 
 
-## The color palettes of the **unicol** package
+<!-- The color palettes of the **unicol** package -->
+
+## Overview 
 
 ```{r unicol-stats, echo = FALSE}
 n_pals <- length(unique(unicol_data$pal))
 n_inst <- length(unique(unicol_data$inst))
 ```
 
-The **unicol** package currently provides **`r n_pals`\ color palettes** from **`r n_inst`\ institutions**. 
+The **unicol** package currently provides **`r n_pals`\ color palettes** from **`r n_inst`\ institutions**.  
+
+<!-- ### Overview -->
+
+<!-- **Table\ 1** provides an overview of **all `r n_pals`\ color palettes** from **`r n_inst`\ institutions**.  -->
+
+**Table\ 1** provides an overview of all included institutions and color palettes. 
+Clicking on the name of a color palette opens the corresponding page of the [online reference](`r paste0(url_github_doc_dev, "/reference/")`). 
+
+```{r unicol-pals-table-static, echo = FALSE, eval = FALSE}
+# Data:
+all_pals_df <- unicol_data
+names(all_pals_df) <- c("Institution", "(aka.)", "URL", "Palette name")
+
+tab_caption <- paste0("Overview of ", n_pals, " unicol palettes (from ", n_inst, " institutions).")
+
+# Print table:
+knitr::kable(all_pals_df, caption = tab_caption, row.names = TRUE)
+```
+
+```{r source-util-funs, echo = FALSE}
+# 1. Utility functions: ------
+
+source("../R/5_util.R")
+```
+
+```{r unicol-data-table, echo = FALSE}
+
+# 2. Process unicol_data: ------
+
+my_pals <- unicol_data$pal
+
+# Look up URLs and create links for my_pals:
+pal_urls <- lookup(my_pals, unicol_data, v_1 = "pal", v_2 = "url")
+pal_inst_links <- link_inst(my_pals)
+pal_doc_links  <- link_github_doc(my_pals)
+pal_lengths    <- sapply(X = unicol_data$pal, FUN = n_col)
+
+# Determine countries from URLs:
+pal_countries <- url_2_country(pal_urls)
+
+# Create summary df:
+my_df <- data.frame(inst = pal_inst_links, 
+                    # url = pal_urls, 
+                    country = pal_countries, 
+                    pal = pal_doc_links,
+                    n_col = pal_lengths)
+
+row.names(my_df) <- 1:nrow(my_df)
+col_names <- c("University / Institution", 
+               # "URL", 
+               "Country", 
+               "Color palette", 
+               "N of colors")
+
+
+# 3. Print df as table: ------
+
+df_caption <- paste0("Overview of ", n_pals, " unicol palettes (from ", n_inst, " institutions).")
+
+knitr::kable(my_df, caption = df_caption, col.names = col_names, row.names = TRUE)
+```
+
 
 
 ### Illustration 
@@ -141,13 +207,11 @@ length(unlist(pal_list))          # number of colors: 253 on 2023-09-14.
 length(unique(unlist(pal_list)))  # number of unique colors: 222 on 2023-09-14. 
 ```
 
-
 <!-- Show as table: -->
 
 ```{r unicol-pals-table-sample, echo = FALSE, eval = FALSE}
 knitr::kable(unicol_data[sample_n, ], caption = tab_caption)
 ```
-
 
 <!-- Show as figure: -->
 
@@ -162,20 +226,6 @@ unikn::seecol(pal = pal_list,
 
 ![**Figure 1:** Examples of **unicol** color palettes.](../man/figures/README-unicol-pals-example-1-figure-1.png)
 
-### Overview
-
-**Table\ 1** provides an overview of **all `r n_pals`\ color palettes** from from **`r n_inst`\ institutions**: 
-
-```{r unicol-pals-table-all, echo = FALSE, eval = TRUE}
-# Data:
-all_pals_df <- unicol_data
-names(all_pals_df) <- c("Institution", "(aka.)", "URL", "Palette name")
-
-tab_caption <- paste0("Overview of ", n_pals, " unicol palettes (from ", n_inst, " institutions).")
-
-# Print table:
-knitr::kable(all_pals_df, caption = tab_caption, row.names = TRUE)
-```
 
 
 <!-- Collecting contributed color palettes (in unicol): -->
@@ -184,7 +234,7 @@ knitr::kable(all_pals_df, caption = tab_caption, row.names = TRUE)
 
 <!-- unicol pkg logo and link: -->
 <!-- <a href = "`r url_unicol_cran`"> -->
-<!-- <img src = "./man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/> -->
+<!-- <img src = "./man/figures/logo.png" alt = "unicol::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/> -->
 <!-- </a>  -->
 
 The current range of color palettes included in **unicol** is selective and incomplete. 
@@ -192,7 +242,7 @@ We are always happy to include new color palettes and institutions from all over
 
 If you are missing a color palette, you can easily create it. 
 For instructions how this can be done, please see the documentation of the `newpal()` function (of the **[unikn](`r url_unikn_cran`)** package). 
-The vignette on [Institutional colors](https://hneth.github.io/unikn/articles/color_inst.html) provides a corresponding example. 
+The vignette on [Institutional colors](https://hneth.github.io/unikn/articles/inst_colors.html) provides a corresponding example. 
 
 **Call for contributions: Collecting color palettes**
 
@@ -200,7 +250,7 @@ The vignette on [Institutional colors](https://hneth.github.io/unikn/articles/co
 
 <!-- ToDo: -->
 <a href = "https://github.com/hneth/unicol/issues/30">
-<img src = "../man/figures/todo.png" alt = "unicol::todo" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
+<img src = "../man/figures/todo.png" alt = "unicol::todo" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/>
 </a>
 
 If you do create a new color palette, **please let us know** (on this [GitHub issue](https://github.com/hneth/unicol/issues/30)) 
@@ -220,7 +270,7 @@ We're looking forward to **your inputs and contributions** (at this [GitHub issu
 
 <!-- unicol pkg logo and link: -->
 <a href = "`r url_unicol_cran`">
-<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
+<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/>
 </a>
 
 The following vignettes provide an overview of and examples for using the **unicol** color palettes: 
@@ -229,7 +279,7 @@ The following vignettes provide an overview of and examples for using the **unic
 
 | Nr.  | Vignette | Content    |        
 | ---: |:---------|:-----------|
-| 1. | [Color palettes](color_pals.html) | The color palettes of the **unicol** R package |
+| 1. | [All color palettes](color_pals.html) | The color palettes of the **unicol** R package |
 | 2. | [Using color palettes](using_pals.html) | Recipes for using the **unicol** color palettes |
 
 

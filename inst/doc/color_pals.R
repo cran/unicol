@@ -23,6 +23,9 @@ knitr::opts_chunk$set(collapse = FALSE,
 url_unicol_cran   <- "https://CRAN.R-project.org/package=unicol"
 url_unicol_github <- "https://github.com/hneth/unicol"
 
+url_github_doc_rel <- "https://hneth.github.io/unicol/"      # release version  
+url_github_doc_dev <- "https://hneth.github.io/unicol/dev/"  # dev version
+
 # unikn / Uni Konstanz:
 url_unikn <- "https://www.uni-konstanz.de"
 
@@ -37,6 +40,57 @@ library('unicol')             # load the package
 ## ----unicol-stats, echo = FALSE-----------------------------------------------
 n_pals <- length(unique(unicol_data$pal))
 n_inst <- length(unique(unicol_data$inst))
+
+## ----unicol-pals-table-static, echo = FALSE, eval = FALSE---------------------
+#  # Data:
+#  all_pals_df <- unicol_data
+#  names(all_pals_df) <- c("Institution", "(aka.)", "URL", "Palette name")
+#  
+#  tab_caption <- paste0("Overview of ", n_pals, " unicol palettes (from ", n_inst, " institutions).")
+#  
+#  # Print table:
+#  knitr::kable(all_pals_df, caption = tab_caption, row.names = TRUE)
+
+## ----source-util-funs, echo = FALSE-------------------------------------------
+# 1. Utility functions: ------
+
+source("../R/5_util.R")
+
+## ----unicol-data-table, echo = FALSE------------------------------------------
+
+# 2. Process unicol_data: ------
+
+my_pals <- unicol_data$pal
+
+# Look up URLs and create links for my_pals:
+pal_urls <- lookup(my_pals, unicol_data, v_1 = "pal", v_2 = "url")
+pal_inst_links <- link_inst(my_pals)
+pal_doc_links  <- link_github_doc(my_pals)
+pal_lengths    <- sapply(X = unicol_data$pal, FUN = n_col)
+
+# Determine countries from URLs:
+pal_countries <- url_2_country(pal_urls)
+
+# Create summary df:
+my_df <- data.frame(inst = pal_inst_links, 
+                    # url = pal_urls, 
+                    country = pal_countries, 
+                    pal = pal_doc_links,
+                    n_col = pal_lengths)
+
+row.names(my_df) <- 1:nrow(my_df)
+col_names <- c("University / Institution", 
+               # "URL", 
+               "Country", 
+               "Color palette", 
+               "N of colors")
+
+
+# 3. Print df as table: ------
+
+df_caption <- paste0("Overview of ", n_pals, " unicol palettes (from ", n_inst, " institutions).")
+
+knitr::kable(my_df, caption = df_caption, col.names = col_names, row.names = TRUE)
 
 ## ----unicol-pals-example, echo = FALSE, eval = TRUE---------------------------
 # Parameters:
@@ -101,16 +155,6 @@ my_main     <- paste0("Illustrating ", n, " unicol palettes (with ", col_count, 
 #  unikn::seecol(pal = pal_list,
 #                pal_names = pal_names,
 #                main = my_main)
-
-## ----unicol-pals-table-all, echo = FALSE, eval = TRUE-------------------------
-# Data:
-all_pals_df <- unicol_data
-names(all_pals_df) <- c("Institution", "(aka.)", "URL", "Palette name")
-
-tab_caption <- paste0("Overview of ", n_pals, " unicol palettes (from ", n_inst, " institutions).")
-
-# Print table:
-knitr::kable(all_pals_df, caption = tab_caption, row.names = TRUE)
 
 ## ----restore-org-options, include = FALSE-------------------------------------
 options(org_opt)  # restore original user options

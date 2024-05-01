@@ -44,7 +44,8 @@ These can be used mainly as graphical backgrounds, button overstates etc.
 }
 \examples{
 cardiff_1
-unikn::seecol(cardiff_1, main = "Primary colours of Cardiff University (w/8 tints)")
+unikn::seecol(cardiff_1, col_bg = "grey96",  
+              main = "Primary colours of Cardiff University (w/8 tints)")
 
 }
 \seealso{
@@ -58,6 +59,10 @@ unikn::seecol(cardiff_1, main = "Primary colours of Cardiff University (w/8 tint
 Other Welsh university color palettes: 
 \code{\link{aberystwyth_1}},
 \code{\link{aberystwyth_2}},
+\code{\link{bangor_1}},
+\code{\link{bangor_2}},
+\code{\link{bangor_3}},
+\code{\link{bangor_4}},
 \code{\link{cardiff_2}}
 }
 \author{

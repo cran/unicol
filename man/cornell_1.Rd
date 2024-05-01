@@ -8,7 +8,7 @@
 An object of class \code{character} of length 3.
 }
 \source{
-Color definitions are based on the
+Color definitions are based on \href{https://www.cornell.edu}{Cornell}'s 
 \href{https://brand.cornell.edu/design-center/colors/}{Color manual}.
 }
 \usage{
@@ -19,19 +19,24 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{cornell_1} provides the two primary colors
-of the \href{https://www.cornell.edu/}{Cornell University}, USA.
+of \href{https://www.cornell.edu}{Cornell University}, USA, 
+and a 3rd \code{"white"} color.
 }
 \details{
-Primary colors are the officially recognized color palette for the university.
-These colors are critical to leverage the Cornell brand and provide clear university consistency.
 Logos may only be represented in 
-\code{"carnelian"} (defined as HEX #B31B1B),  
-\code{"dark_gray"} (defined as HEX #222222), or 
+\code{"Carnelian"} (defined as HEX #B31B1B),  
+\code{"dark gray"} (defined as HEX #222222), or 
 \code{"white"} (defined as HEX #FFFFFF).
+
+
+Primary colors are the officially recognized color palette for the university.
+These colors are critical to leverage the 
+\href{https://www.cornell.edu}{Cornell} brand and provide clear university consistency.
 }
 \examples{
 cornell_1
-unikn::seecol(cornell_1, main = "Primary colors Cornell Uni") # view color palette
+unikn::seecol(cornell_1, col_bg = "grey90",  
+              main = "The primary colors of Cornell University")  # view palette
 
 }
 \seealso{
@@ -44,16 +49,6 @@ unikn::seecol(cornell_1, main = "Primary colors Cornell Uni") # view color palet
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -65,7 +60,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
 \code{\link{dartmouth_1}},
@@ -82,7 +82,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -110,14 +110,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

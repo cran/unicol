@@ -9,7 +9,7 @@ An object of class \code{character} of length 7.
 }
 \source{
 MQ's staff portal page 
-\href{https://staff.mq.edu.au/support/marketing-and-communications/brand-guidelines/colours-and-light-graphic}{Colours and light graphic}
+\href{https://mqoutlook.sharepoint.com/sites/mq-marketing-and-communications/SitePages/Colours-and-light-graphic.aspx}{Colours and light graphic}
 }
 \usage{
 mq_1
@@ -46,8 +46,8 @@ unikn::seecol(mq_1, main = "Primary colours of Macquarie University") # view col
 \code{\link{grepal}} for finding named colors.
 
 Other Australian university color palettes: 
-\code{\link{ANU_1}},
-\code{\link{ANU_2}},
+\code{\link{anu_1}},
+\code{\link{anu_2}},
 \code{\link{mq_2}},
 \code{\link{wollongong_1}},
 \code{\link{wollongong_2}}

@@ -8,8 +8,8 @@
 An object of class \code{character} of length 1.
 }
 \source{
-Colour definitions are based on the
-\href{https://www.mcgill.ca/visual-identity/visual-identity-guide}{Visual Identity Guide}.
+Colour definitions are based on \href{https://www.mcgill.ca}{McGill}'s 
+\href{https://www.mcgill.ca/visual-identity/visual-identity-guide}{visual identity guide}.
 }
 \usage{
 mcgill_red
@@ -19,11 +19,11 @@ A named vector of colours (HEX/HTML codes of type character).
 }
 \description{
 \code{mcgill_red} provides the primary color "McGill Red" (or \code{mcgill_red})
-of \href{https://www.mcgill.ca/}{McGill University}, Canada.
+of \href{https://www.mcgill.ca}{McGill University}, Canada.
 }
 \details{
-The colour is called 
-\code{"mcgill_red"} and defined as CMYK 0/100/90/0, RGB 237/27/47, HEX #ed1b2f.
+The primary colour is called 
+\code{"McGill red"} and defined as CMYK 0/100/90/0, RGB 237/27/47, HEX #ed1b2f.
 
 \code{mcgill_red} uses the HEX colour definition.
  
@@ -48,10 +48,10 @@ unikn::seecol(mcgill_red, main = "McGill red") # view colour palette
 
 Other Canadian university color palettes: 
 \code{\link{carleton}},
-\code{\link{conc_1}},
-\code{\link{conc_2}},
-\code{\link{conc_3}},
-\code{\link{conc_4}},
+\code{\link{concordia_1}},
+\code{\link{concordia_2}},
+\code{\link{concordia_3}},
+\code{\link{concordia_4}},
 \code{\link{guelph}},
 \code{\link{laval}},
 \code{\link{manitoba_1}},
@@ -68,15 +68,15 @@ Other Canadian university color palettes:
 \code{\link{queensu_1}},
 \code{\link{queensu_2}},
 \code{\link{sfu_brand}},
-\code{\link{ubc_1}},
+\code{\link{ubc}},
 \code{\link{ucalgary_1}},
 \code{\link{ucalgary_2}},
 \code{\link{ucalgary_accent}},
 \code{\link{ucalgary_warmgreys}},
 \code{\link{uottawa}},
 \code{\link{utoronto}},
-\code{\link{uvic_complementary}},
-\code{\link{uvic_core}},
+\code{\link{uvic_1}},
+\code{\link{uvic_2}},
 \code{\link{uwaterloo_arts}},
 \code{\link{uwaterloo_engineering}},
 \code{\link{uwaterloo_environment}},

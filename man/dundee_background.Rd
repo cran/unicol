@@ -3,13 +3,13 @@
 \docType{data}
 \name{dundee_background}
 \alias{dundee_background}
-\title{Background colours of University of Dundee, Scotland/UK}
+\title{Background colours of University of Dundee, Scotland}
 \format{
 An object of class \code{character} of length 1.
 }
 \source{
-Colour definitions are based on the
-\href{https://www.dundee.ac.uk/brand/colour-palette}{Brand colour palette}.
+Colour definitions are based on \href{https://www.dundee.ac.uk}{Dundee}'s 
+\href{https://www.app.dundee.ac.uk/pattern-library/}{Brand colour palette}.
 }
 \usage{
 dundee_background
@@ -19,7 +19,7 @@ A named vector of colours (HEX/HTML codes of type character).
 }
 \description{
 \code{dundee_background} provides the background colour 
-of \href{https://www.dundee.ac.uk/}{University of Dundee}, Scotland.
+of \href{https://www.dundee.ac.uk}{University of Dundee}, Scotland, UK.
 }
 \details{
 A background colour has been developed to act 
@@ -36,7 +36,8 @@ CMYK colours differ from RGB and HEX definition.
 }
 \examples{
 dundee_background
-unikn::seecol(dundee_background, main = "Background colour of Dundee") # view colour palette
+unikn::seecol(dundee_background, col_bg = "grey80",  
+              main = "Background colour of Dundee")  # view colour
 
 }
 \seealso{
@@ -55,7 +56,10 @@ Other Scottish university color palettes:
 \code{\link{dundee_highlight}},
 \code{\link{edinburgh}},
 \code{\link{standrews_1}},
-\code{\link{standrews_2}}
+\code{\link{standrews_2}},
+\code{\link{stirling_1}},
+\code{\link{stirling_2}},
+\code{\link{stirling_3}}
 }
 \author{
 \strong{unicol}, 2023-06-22.

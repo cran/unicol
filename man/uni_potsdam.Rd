@@ -19,7 +19,7 @@ A names vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{uni_potsdam} provides the nine primary colors
-of the \href{https://www.uni-potsdam.de/de/}{University of Potsdam}, Germany.
+of the \href{https://www.uni-potsdam.de/de}{University of Potsdam}, Germany.
 }
 \details{
 The 9 primary colors are 
@@ -52,11 +52,11 @@ Other German university color palettes:
 \code{\link{fu_1}},
 \code{\link{fu_2}},
 \code{\link{fu_3}},
+\code{\link{hu_1}},
 \code{\link{hu_1_2022}},
 \code{\link{hu_1_digital}},
-\code{\link{hu_1}},
-\code{\link{hu_2_2022}},
 \code{\link{hu_2}},
+\code{\link{hu_2_2022}},
 \code{\link{hu_3_accent}},
 \code{\link{lmu_1}},
 \code{\link{lmu_2}},
@@ -74,6 +74,7 @@ Other German university color palettes:
 \code{\link{uni_goettingen_1}},
 \code{\link{uni_goettingen_2}},
 \code{\link{uni_goettingen_3}},
+\code{\link{uni_halle}},
 \code{\link{uni_hamburg_1}},
 \code{\link{uni_hamburg_2}},
 \code{\link{uni_heidelberg}},
@@ -86,6 +87,9 @@ Other German university color palettes:
 \code{\link{uni_koeln_2}},
 \code{\link{uni_konstanz_1}},
 \code{\link{uni_konstanz_2}},
+\code{\link{uni_magdeburg_1}},
+\code{\link{uni_magdeburg_2}},
+\code{\link{uni_magdeburg_3}},
 \code{\link{uni_mannheim_1}},
 \code{\link{uni_mannheim_2}},
 \code{\link{uni_regensburg_1}},

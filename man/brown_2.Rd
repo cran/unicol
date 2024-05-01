@@ -8,8 +8,8 @@
 An object of class \code{character} of length 4.
 }
 \source{
-Color definitions are based on 
-\href{https://www.brown.edu/university-identity/sites/university-identity/files/Brown_Visual_Identity_Policy_2016-07-22.pdf}{Brown's CD manual (PDF)}.
+Color definitions are based on \href{https://www.brown.edu}{Brown}'s 
+\href{https://www.brown.edu/university-identity/sites/university-identity/files/Brown_Visual_Identity_Policy_2016-07-22.pdf}{CD manual} (PDF).
 }
 \usage{
 brown_2
@@ -19,26 +19,29 @@ A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
 \code{brown_2} provides four secondary colors that complement the primary color palette. 
-of the \href{https://www.brown.edu}{Brown University}, USA
-Composed of contemporary colors, the secondary color palette will be maintained as a flexible palette that may be updated as color trends shift over time.
+of \href{https://www.brown.edu}{Brown University}, USA.
 }
 \details{
-The four secondary colors are
-\code{"skyblue"} (HEX: #59CBE8),
-\code{"emerald"} (HEX: #00B398),
-\code{"navy"} (HEX: #003C71), and
-\code{"taupe"} (HEX: #B7B09C) .
+The current 4 secondary colors are
+\code{"Skyblue"} (defined as HEX #59CBE8),
+\code{"Emerald"} (defined as HEX #00B398),
+\code{"Navy"} (defined as HEX #003C71), and
+\code{"Taupe"} (defined as HEX #B7B09C).
 
 \code{brown_2} uses the HEX color definitions.
+
+
+Composed of contemporary colors, the secondary color palette 
+is maintained as a flexible palette that may be updated,  
+as color trends shift over time.
 }
 \examples{
 brown_2
-unikn::seecol(brown_2, 
-              main = "Secondary colors of Brown University") # view color palette
+unikn::seecol(brown_2, main = "Secondary colors of Brown University")  # view palette
 
 }
 \seealso{
-\code{\link{brown_1}} for primary colors of Brown University; 
+\code{\link{brown_1}} for primary and accent colors of Brown University; 
 \code{\link{seecol}} for viewing and comparing color palettes;
 \code{\link{usecol}} for using color palettes;
 \code{\link{simcol}} for finding similar colors;
@@ -46,16 +49,6 @@ unikn::seecol(brown_2,
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -66,7 +59,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -84,7 +82,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -112,14 +110,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

@@ -1,4 +1,4 @@
-## Uni_Stuttgart.R | 2023 08 24
+## Uni_Stuttgart.R | 2023 09 26
 ## Colors of the University of Stuttgart, Germany
 ## ----------------------------------------------
 
@@ -119,12 +119,13 @@ col_hellBlau <- "#00BEFF"
 #' \strong{unicol}, 2023-05-31.
 #'
 #' @source
-#' Color definitions are based on the
+#' Color definitions are based on the \href{https://www.uni-stuttgart.de/en}{Uni Stuttgart}'s
 #' \href{https://www.beschaeftigte.uni-stuttgart.de/uni-services/oeffentlichkeitsarbeit/corporate-design/cd-dateien/Uni_Stuttgart_CD-Manual.pdf}{CD manual (PDF)}.
 #'
 #' @examples
 #' uni_stuttgart_1
-#' unikn::seecol(uni_stuttgart_1, main = "Primary colors Uni Stuttgart") # view color palette
+#' unikn::seecol(uni_stuttgart_1, col_bg = "grey90",  
+#'               main = "Primary colors of the University of Stuttgart")  # view palette
 #'
 #' @family German university color palettes
 #'
@@ -178,12 +179,13 @@ uni_stuttgart_1 <- unikn::newpal(col = c(col_weiss, col_anthrazit, col_mittelBla
 #' \strong{unicol}, 2023-05-31.
 #'
 #' @source
-#' Color definitions are based on the
+#' Color definitions are based on the \href{https://www.uni-stuttgart.de/en}{Uni Stuttgart}'s
 #' \href{https://www.beschaeftigte.uni-stuttgart.de/uni-services/oeffentlichkeitsarbeit/corporate-design/cd-dateien/Uni_Stuttgart_CD-Manual.pdf}{CD manual (PDF)}.
 #'
 #' @examples
 #' uni_stuttgart_print
-#' unikn::seecol(uni_stuttgart_print, main = "Printing colors Uni Stuttgart") # view color palette
+#' unikn::seecol(uni_stuttgart_print, col_bg = "grey90", 
+#'               main = "Printing colors of the University of Stuttgart")  # view palette
 #'
 #' @family German university color palettes
 #'
@@ -197,8 +199,10 @@ uni_stuttgart_1 <- unikn::newpal(col = c(col_weiss, col_anthrazit, col_mittelBla
 #'
 #' @export
 
-uni_stuttgart_print <- unikn::newpal(col = c(col_weiss, col_anthrazit, col_mittelBlau, col_hellBlau, col_anthrazit_print_blackwhite, col_black_print_text),
-                                     names = c("weiss", "anthrazit", "mittelblau", "hellblau", "anthrazit dark", "black"),
+uni_stuttgart_print <- unikn::newpal(col = c(col_weiss, col_anthrazit, col_mittelBlau, col_hellBlau, 
+                                             col_anthrazit_print_blackwhite, col_black_print_text),
+                                     names = c("weiss", "anthrazit", "mittelblau", "hellblau", 
+                                               "anthrazit dark", "black"),
                                      as_df = FALSE)
 
 

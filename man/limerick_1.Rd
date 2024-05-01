@@ -8,8 +8,8 @@
 An object of class \code{character} of length 4.
 }
 \source{
-Colour definitions are based on 
-\href{https://www.ul.ie/media/31805/download?inline}{ULimerck's brand guidelines (PDF)}.
+Colour definitions are based on \href{https://www.ul.ie}{ULimerick}'s 
+\href{https://www.ul.ie/media/31805/download?inline}{brand guidelines} (PDF).
 }
 \usage{
 limerick_1
@@ -32,7 +32,8 @@ The 4 primary colours are
 }
 \examples{
 limerick_1
-unikn::seecol(limerick_1, main= "University of Limerick 1") # view colour palette.
+unikn::seecol(limerick_1, col_bg = "grey90", 
+              main= "Primary colours of the University of Limerick")  # view palette
 
 }
 \seealso{
@@ -44,15 +45,15 @@ unikn::seecol(limerick_1, main= "University of Limerick 1") # view colour palett
 \code{\link{grepal}} for finding named colors.
 
 Other Irish university color palettes: 
-\code{\link{UCC_1}},
-\code{\link{UCC_2}},
-\code{\link{UCD}},
 \code{\link{galway_1}},
 \code{\link{galway_2}},
 \code{\link{limerick_2}},
 \code{\link{maynooth}},
 \code{\link{trinity_1}},
-\code{\link{trinity_2}}
+\code{\link{trinity_2}},
+\code{\link{ucc_1}},
+\code{\link{ucc_2}},
+\code{\link{ucd}}
 }
 \author{
 \strong{unicol}, 2023-07-16.

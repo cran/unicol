@@ -8,8 +8,8 @@
 An object of class \code{character} of length 7.
 }
 \source{
-Colour definitions are based on the
-\href{https://brand.mcmaster.ca/app/uploads/2019/04/digital-guidelines.pdf}{Digital Brand Standards Manual}.
+Colour definitions are based on \href{https://www.mcmaster.ca}{McMaster}'s 
+\href{https://brand.mcmaster.ca/app/uploads/2019/04/digital-guidelines.pdf}{Digital brand manual} (PDF).
 }
 \usage{
 mcmaster_brighterworld
@@ -19,35 +19,41 @@ A named vector of colours (HEX/HTML codes of type character).
 }
 \description{
 \code{mcmaster_brighterworld} provides the Brighter World Colours 
-of \href{https://www.mcmaster.ca/}{McMaster University}, Canada.
+of \href{https://www.mcmaster.ca}{McMaster University}, Canada.
 }
 \details{
+The corresponding colours are 
+\code{"Brighter world yellow"} (defined as HEX #FFD100),
+\code{"Brighter world lime"} (defined as HEX #D2D755), and
+\code{"Brighter world sky blue"} (defined as HEX #8BD3E6).
+
+The darker tones of the Brighter World Colours are
+\code{"Brighter world red"} (defined as HEX #A6192E),
+\code{"Brighter world green"} (defined as HEX #007B4B) and
+\code{"Brighter world blue"} (defined as HEX #007096).
+
+
 The Brighter World brand colours blend well with McMaster Maroon and Gold 
 and provide a broadened range of colour options that renew McMaster’s image in a youthful way. 
+
 This palette is intentionally vibrant and these hues complement each other and the Heritage Colour palette, 
 reflecting the “Brighter World” brand story and spirit of collaboration at the university.
 
 The highlight colours of the Brighter World palette are used for highlights and backgrounds in the duotone images.
-The colours are
-\code{"brighter_world_yellow"} (defined as HEX #FFD100),
-\code{"brighter_world_lime"} (defined as HEX #D2D755), and
-\code{"brighter_world_sky_blue"} (defined as HEX #8BD3E6).
 
-The darker tones of the Brighter World Colours are
-\code{"brighter_world_red"} (defined as HEX #A6192E),
-\code{"brighter_world_green"} (defined as HEX #007B4B) and
-\code{"brighter_world_blue"} (defined as HEX #007096). 
 The colours are used to contrast the highlights in the duotone images. 
 The Darker Tones palette is intended to add contrast where a darker colour is necessary  
 to retain clarity of detail in a photograph. 
+
 Because of its strong impact, use the darker red judiciously.
 
-The neutral support colour of the Brighter World Colours is
-\code{"cool_grey"} (defined as HEX #DBDBDD).
+The neutral support colour of the Brighter world colours is
+\code{"Cool grey"} (defined as HEX #DBDBDD).
 }
 \examples{
 mcmaster_brighterworld
-unikn::seecol(mcmaster_brighterworld, main = "McMaster Brighter World") # view colour palette
+unikn::seecol(mcmaster_brighterworld, 
+              main = "McMaster's Brighter World colours")  # view colour palette
 
 }
 \seealso{
@@ -60,10 +66,10 @@ unikn::seecol(mcmaster_brighterworld, main = "McMaster Brighter World") # view c
 
 Other Canadian university color palettes: 
 \code{\link{carleton}},
-\code{\link{conc_1}},
-\code{\link{conc_2}},
-\code{\link{conc_3}},
-\code{\link{conc_4}},
+\code{\link{concordia_1}},
+\code{\link{concordia_2}},
+\code{\link{concordia_3}},
+\code{\link{concordia_4}},
 \code{\link{guelph}},
 \code{\link{laval}},
 \code{\link{manitoba_1}},
@@ -80,15 +86,15 @@ Other Canadian university color palettes:
 \code{\link{queensu_1}},
 \code{\link{queensu_2}},
 \code{\link{sfu_brand}},
-\code{\link{ubc_1}},
+\code{\link{ubc}},
 \code{\link{ucalgary_1}},
 \code{\link{ucalgary_2}},
 \code{\link{ucalgary_accent}},
 \code{\link{ucalgary_warmgreys}},
 \code{\link{uottawa}},
 \code{\link{utoronto}},
-\code{\link{uvic_complementary}},
-\code{\link{uvic_core}},
+\code{\link{uvic_1}},
+\code{\link{uvic_2}},
 \code{\link{uwaterloo_arts}},
 \code{\link{uwaterloo_engineering}},
 \code{\link{uwaterloo_environment}},

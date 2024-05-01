@@ -8,7 +8,7 @@
 An object of class \code{character} of length 12.
 }
 \source{
-Color definitions are based on the
+Color definitions are based on \href{https://www.berkeley.edu}{Berkeley}'s 
 \href{https://brand.berkeley.edu/identity-and-visual-design/color}{Color manual}.
 }
 \usage{
@@ -18,35 +18,52 @@ berkeley_2
 A named vector of colors (HEX/HTML codes of type character).
 }
 \description{
-\code{berkeley_2} provides the 12 secondary colors
-of the \href{https://www.berkeley.edu}{Berkeley, University of California}, USA.
+\code{berkeley_2} provides the twelve secondary colors
+of \href{https://www.berkeley.edu}{Berkeley, University of California}, USA.
 }
 \details{
-The secondary palette is broken into four groups: neutrals, vibrants, brights and darks.
-Each is represented by a column in the grid below, with colors getting progressively darker in value from left to right.
-The following pages break down each column into individual colors and show ways to create unique color palettes within the larger Berkeley palette.
+The 12 secondary colors are divided into 4 sub-groups: 
+3 \emph{Neutrals}: 
+\code{"Wellman tile"} (defined as HEX #D9661F, CMYK 0/69/98/12, Pantone 7416),
+\code{"Bay fog"} (defined as HEX #DDD5C7, CMYK 5/11/8/12, Pantone 434), and 
+\code{"Sather gate"} (defined as HEX #B9D3B6, CMYK 25/2/30/4, Pantone 558); 
+3 \emph{Vibrants}: 
+\code{"Rose garden"} (defined as HEX #EE1F60, CMYK 0/98/46/0, Pantone 1925),
+\code{"Lawrence"} (defined as HEX #00B0DA, CMYK 79/0/6/5, Pantone 306), and 
+\code{"Ion"} (defined as HEX #CFDD45, CMYK 23/0/89/0, Pantone 381); 
+3 \emph{Brights}: 
+\code{"Golden gate"} (defined as HEX #ED4E33, CMYK 1/85/88/0, Pantone 7417),
+\code{"Lap lane"} (defined as HEX #00A598, CMYK 81/0/39/0, Pantone 326), and 
+\code{"Soybean"} (defined as HEX #859438, CMYK 17/0/88/39, Pantone 7746); and 
+3 \emph{Darks}: 
+\code{"South hall"} (defined as HEX #6C3302, CMYK 11/68/95/62, Pantone 7602),
+\code{"Pacific"} (defined as HEX #46535E, CMYK 45/25/16/59, Pantone 431), and
+\code{"Stone pine"} (defined as HEX #584F29, CMYK 40/40/80/55, Pantone 450).
 
-Secondary colors are
-\code{"neutrals"} (defined as HEX #D9661F, CMYK 0/69/98/12, Pantone 7416),
-\code{"bay fog"} (defined as HEX #DDD5C7, CMYK 5/11/8/12, Pantone 434),
-\code{"sather gate"} (defined as HEX #B9D3B6, CMYK 25/2/30/4, Pantone 558),
-\code{"rose garden"} (defined as HEX #EE1F60, CMYK 0/98/46/0, Pantone 1925),
-\code{"lawrence"} (defined as HEX #00B0DA, CMYK 79/0/6/5, Pantone 306),
-\code{"ion"} (defined as HEX #CFDD45, CMYK 23/0/89/0, Pantone 381),
-\code{"golden gate"} (defined as HEX #ED4E33, CMYK 1/85/88/0, Pantone 7417),
-\code{"lap lane"} (defined as HEX #00A598, CMYK 81/0/39/0, Pantone 326),
-\code{"soybean"} (defined as HEX #859438, CMYK 17/0/88/39, Pantone 7746),
-\code{"south hall"} (defined as HEX #6C3302, CMYK 11/68/95/62, Pantone 7602),
-\code{"pacific"} (defined as HEX #46535E, CMYK 45/25/16/59, Pantone 431), and
-\code{"stone pine"} (defined as HEX #584F29, CMYK 40/40/80/55, Pantone 450).
+
+\href{https://www.berkeley.edu}{Berkeley}'s secondary palette is broken into four groups: 
+\emph{Neutrals}, \emph{Vibrants}, \emph{Brights}, and \emph{Darks}.
+
+In a grid of the \href{https://brand.berkeley.edu/identity-and-visual-design/color}{Color manual}, 
+each group is represented by a column, with colors getting progressively darker 
+in value by group (from left to right). 
+
+See the \href{https://brand.berkeley.edu/identity-and-visual-design/color}{Color manual} 
+for accessible and suitable combinations.
 }
 \examples{
 berkeley_2
-unikn::seecol(berkeley_2, main = "Secondary colors Berkeley") # view color palette
+unikn::seecol(berkeley_2, main = "Secondary colors of Berkeley, CA") # view color palette
+
+# Sub-groups: 
+berkeley_2[1:3]    # Neutrals
+berkeley_2[4:6]    # Vibrants
+berkeley_2[7:9]    # Brights
+berkeley_2[10:12]  # Darks
 
 }
 \seealso{
-\code{\link{berkeley_1}} for the primary colors of Berkeley, University of California; 
+\code{\link{berkeley_1}} for primary colors of Berkeley, University of California; 
 \code{\link{seecol}} for viewing and comparing color palettes;
 \code{\link{usecol}} for using color palettes;
 \code{\link{simcol}} for finding similar colors;
@@ -54,16 +71,6 @@ unikn::seecol(berkeley_2, main = "Secondary colors Berkeley") # view color palet
 \code{\link{grepal}} for finding named colors.
 
 Other U.S. university color palettes: 
-\code{\link{CMU_1_core}},
-\code{\link{CMU_2_tartan}},
-\code{\link{CMU_3_campus}},
-\code{\link{UCLA_1}},
-\code{\link{UCLA_2}},
-\code{\link{UCLA_3}},
-\code{\link{UCLA_4}},
-\code{\link{UCSD_1}},
-\code{\link{UCSD_2}},
-\code{\link{UCSD_3}},
 \code{\link{asu_1}},
 \code{\link{asu_2}},
 \code{\link{asu_3}},
@@ -74,7 +81,12 @@ Other U.S. university color palettes:
 \code{\link{caltech_1}},
 \code{\link{caltech_2}},
 \code{\link{caltech_3}},
-\code{\link{columbia}},
+\code{\link{cmu_1}},
+\code{\link{cmu_2}},
+\code{\link{cmu_3}},
+\code{\link{columbia_1}},
+\code{\link{columbia_2}},
+\code{\link{columbia_3}},
 \code{\link{cornell_1}},
 \code{\link{cornell_2}},
 \code{\link{cornell_3_accent}},
@@ -92,7 +104,7 @@ Other U.S. university color palettes:
 \code{\link{jhu_3_accent}},
 \code{\link{jhu_4_gray}},
 \code{\link{manchester_uni_1}},
-\code{\link{manchester_uni_accent}},
+\code{\link{manchester_uni_2}},
 \code{\link{michigan_1}},
 \code{\link{michigan_2}},
 \code{\link{minnesotatwin_1}},
@@ -120,14 +132,21 @@ Other U.S. university color palettes:
 \code{\link{rpi_2}},
 \code{\link{rpi_3}},
 \code{\link{stanford_1}},
-\code{\link{stanford_2_accent}},
-\code{\link{stanford_3_web}},
+\code{\link{stanford_2}},
+\code{\link{stanford_3}},
 \code{\link{uchicago_1}},
 \code{\link{uchicago_2}},
 \code{\link{uci_1}},
 \code{\link{uci_2}},
 \code{\link{uci_3}},
 \code{\link{uci_4}},
+\code{\link{ucla_1}},
+\code{\link{ucla_2}},
+\code{\link{ucla_3}},
+\code{\link{ucla_4}},
+\code{\link{ucsd_1}},
+\code{\link{ucsd_2}},
+\code{\link{ucsd_3}},
 \code{\link{uflorida_1}},
 \code{\link{uflorida_2}},
 \code{\link{uflorida_3}},

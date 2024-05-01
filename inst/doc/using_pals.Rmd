@@ -3,14 +3,11 @@ title: "Using color palettes"
 author: "Hansjoerg Neth"
 date: "`r Sys.Date()`"
 output: 
-  rmarkdown::html_vignette: 
-    fig_caption: yes
+  rmarkdown::html_vignette
 vignette: > 
   %\VignetteIndexEntry{Using color palettes}
-  %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
-editor_options: 
-  chunk_output_type: console
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include = FALSE}
@@ -38,6 +35,9 @@ knitr::opts_chunk$set(collapse = FALSE,
 url_unicol_cran   <- "https://CRAN.R-project.org/package=unicol"
 url_unicol_github <- "https://github.com/hneth/unicol"
 
+url_github_doc_rel <- "https://hneth.github.io/unicol/"      # release version  
+url_github_doc_dev <- "https://hneth.github.io/unicol/dev/"  # dev version
+
 # unikn / Uni Konstanz:
 url_unikn <- "https://www.uni-konstanz.de"
 
@@ -53,17 +53,17 @@ url_unikn_github <- "https://github.com/hneth/unikn"
 
 <!-- unikn pkg logo and link: -->
 <!-- <a href = "`r url_unikn_cran`"> -->
-<!-- <img src = "../man/figures/logo_unikn_pkg.png" alt = "unikn::" align = "right" width = "140px" style = "width: 140px; float: right; border:0;"/> -->
+<!-- <img src = "../man/figures/logo_unikn_pkg.png" alt = "unikn::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/> -->
 <!-- </a> -->
 
 <!-- unicol pkg logo and link: -->
 <a href = "`r url_unicol_cran`">
-<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
+<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/>
 </a>
 
 
 This vignettes shows **how to** use the color palettes included in the **unicol** R\ package. 
-(See the vignette on [Color palettes](color_pals.html) for an overview of the palettes included in the package.) 
+(See the [All color palettes](color_pals.html) vignette for an overview of the palettes included in the package.) 
 
 We install or load the **unicol** package to get started: 
 
@@ -159,7 +159,7 @@ The resulting color palette can then be provided as the `values` of **ggplot2**'
 ```{r use-pal-ggplot2, eval = TRUE, fig.width = 6, fig.asp = .65, out.width = "550px"}
 # 0. Create some data to plot: ---- 
 
-# Example based on https://www.r-graph-gallery.com/137-spring-shapes-data-art/
+# Example based on https://r-graph-gallery.com/137-spring-shapes-data-art/
 n <- 50
 groups <- 1:n
 df <- data.frame()
@@ -248,7 +248,7 @@ See the [Color recipes](https://hneth.github.io/unikn/articles/color_recipes.htm
 
 <!-- unicol pkg logo and link: -->
 <a href = "`r url_unicol_cran`">
-<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "160px" style = "width: 160px; float: right; border:0;"/>
+<img src = "../man/figures/logo.png" alt = "unicol::" align = "right" width = "150px" style = "width: 150px; float: right; border:0;"/>
 </a>
 
 The following vignettes provide an overview of and examples for using the **unicol** color palettes: 
@@ -257,7 +257,7 @@ The following vignettes provide an overview of and examples for using the **unic
 
 | Nr.  | Vignette | Content    |        
 | ---: |:---------|:-----------|
-| 1. | [Color palettes](color_pals.html) | The color palettes of the **unicol** R package |
+| 1. | [All color palettes](color_pals.html) | The color palettes of the **unicol** R package |
 | 2. | [Using color palettes](using_pals.html) | Recipes for using the **unicol** color palettes |
 
 
